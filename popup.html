@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PopUp</title>
+  <meta charset="utf-8">
+  <meta name="description">
+  <meta name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+
+<style>
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+}
+
+.modalContent {
+  background-color: #FEFEFE;
+  border: 5px solid black;
+  width: 50%;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 30px;
+}
+
+#modalTitle {
+  border-bottom: 2px solid red;
+  padding-bottom: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Pop-Up</h1>
+
+<button id="btnOpen">Open Pop-Up</button>
+
+<div id="ageModal" class="modal">
+
+  <div class="modalContent">
+    <span class="close">&times;</span>
+    <h3 id="modalTitle">Etes-vous majeur ?</h3>
+    <p>Avant de pouvoir continuer à naviguer sur ce site, nous avons besoin d'être sûr
+    sûr que vous êtes majeur. En cliquant sur le bouton "Entrer", vous certifiez avoir
+    18 ou plus.</p>
+    <button class="btn btn-success">Entrez</button>
+    <button class="btn btn-danger" id="btnClose">Sortir</button>
+  </div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!--  <script src="js/jQuery.js"></script> -->
+
+<script>
+  var modal = document.getElementById("ageModal");
+  var btn = document.getElementById("btnOpen");
+  var spanClose = document.getElementsByClassName("close")[0];
+  var btnClose = document.getElementById("btnClose");
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  // Affiche la Modale
+
+  spanClose.onclick = function() {
+    modal.style.display = "none";
+  }
+  // Ferme la Modal suite au clic btn pour fermer
+
+  btnClose.onclick = function() {
+    modal.style.display = "none";
+  }
+  // Ferme la Modal suite au clic btn pour fermer
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  // Ferme la Modal dans le cas où un clic est fait en dehors de celle-ci
+  // A ne pas garder dans la version finale
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eaf7f7",
+      "text": "#5c7291"
+    },
+    "button": {
+      "background": "#56cbdb",
+      "text": "#ffffff"
+    }
+  },
+  "content": {
+    "message": "This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies. Find out more.",
+    "dismiss": "Got it!",
+    "link": "Learn More"
+  }
+})});
+</script>
+
+</body>
+
+</html>
