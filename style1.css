@@ -166,6 +166,10 @@ footer {
 
 /* CSS de Gary ci-dessous */
 
+#section2 {
+	margin-top: 500px;
+}
+
 .title-section {
 	border-left: 3px solid #FF8D1B;
 	margin-left: 30px;
@@ -194,7 +198,6 @@ footer {
 	color: #FFF;
 	padding: 7px;
 }
-
 
 .movie {
 	width: 180px;
@@ -232,4 +235,3 @@ footer {
 	display: none;
 	margin-top: 20px;
 }
-
