@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
-  $("#multiplicateur").click(function() {
-    $("#multiplicateur").effect("shake", {times:4}, 1000);
+  $(".moreMoviesBtn").click(function() {
+    $(".moreMoviesBox").slideToggle("slow")
+//    $(".moreMoviesBtn").text("Moins de films");
+
   });
 
 });
