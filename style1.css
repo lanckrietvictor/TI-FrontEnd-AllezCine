@@ -235,3 +235,43 @@ footer {
 	display: none;
 	margin-top: 20px;
 }
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		SOCIAL NETWORK
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#socialNetworkID {
+	position: fixed;
+	top: 300px;
+}
+
+.btnSocialNetwork {
+	width: 300px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: -230px;
+	border-radius: 50px;
+	transition: width 1s;
+	-webkit-transition: width 1s;
+}
+
+.btnSocialNetwork:hover {
+	width: 400px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: -230px;
+	border-radius: 50px;
+}
+
+#twitter {
+	background-color: #33CCFF;
+}
+#facebook {
+	background-color: #3B5998;
+}
+#dribbble {
+	background-color: #EA4C89;
+}
+#googlePlus {
+	background-color: #DD4B39;
+}
