@@ -1,0 +1,163 @@
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		HEADER
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+.logo {
+	height: 75px;
+	width: 75px;
+	background-image: url(logo.jpg);
+	background-size: cover;
+}
+
+#header {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+
+#gobutton {
+	background-color: #212121;
+	color: white;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	margin-left: 0;
+}
+
+#searchbar {
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+#telephone {
+	display: inline-block;
+	margin-left: 1rem;
+}
+
+#login {
+	background-color: #FF8D1B;
+	color: white;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.navbar-default {
+	background-image: none;
+	background-color: #FF8D1B;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #212121;
+}
+
+.navbar-default {
+	border-color: none;
+}
+
+.tabs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 1fr;
+	border-right: 1px solid white;
+}
+
+a {
+	color: white;
+	font-weight: bold;
+}
+
+.glyphicon-triangle-bottom {
+	color: white;
+}
+
+.filler {
+	color: #FF8D1B;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		JUMBOTRON
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.jumbotron {
+	background-size: cover;
+	height: 200px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#filmcarousel {
+	height: 300px;
+}
+
+#item {
+	height: 300px;
+}
+
+.carouselcaption {
+	height: 50px;
+	display: flex;
+	align-self: flex-end;
+}
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		FOOTER
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+footer {
+	background-color: #212121;
+	color: #FF8D1B;
+	font-weight: bold;
+	font-size: 120%;
+	height: 300px;
+}
+
+.subscribe {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#emailbar {
+	border-radius: 0;
+	margin-right: 5px;
+}
+
+#send {
+	border-radius: 0;
+	background-color: #FF8D1B;
+	color: white;
+	margin-left: 5px;
+}
+
+#subscribeborder {
+	border: solid 1px white;
+	padding: 10px;
+}
+
+.box {
+	margin-left: 0px;
+}
+
+.bottomtext {
+	font-size: 70%;
+	color: white;
+}
+
+#copyright {
+	color: #5F5F5F;
+}
