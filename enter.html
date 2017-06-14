@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Modal</title>
+  <meta charset="utf-8">
+  <meta name="description">
+  <meta name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+
+</head>
+
+<body>
+
+<h1>Modal</h1>
+
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Vérification de l'âge...</h4>
+      </div>
+      <div class="modal-body">
+        <p>Avant de pouvoir continuer à naviguer sur ce site, nous avons besoin d'être sûr
+        sûr que vous ayez au minimum 18 ans. Veuillez entrez votre âge dans le champ suivant et de valider celui-ci
+        en cliquant sur le bouton correspondant.</p>
+        <input type="text" placeholder="Entrez votre age ici" id="inputAge"/>
+        <button type="button" class="btn btn-success" onclick="verifAge()">Vérifier!</button>
+        <button type="button" class="btn btn-danger">Quitter</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<!-- Insertion Cookie Conset -->
+<script>
+
+function verifAge() {
+  var age = document.getElementById("inputAge").value;
+  var modalAge = document.getElementById("myModal");
+
+  if (age < 18) {
+    console.log("Hop hop hop!");
+  }
+  else {
+    console.log("Welcome");
+    modalAge.className += "close";
+    modalAge.setAttribute("data-dismiss", "modal");
+
+  }
+
+}
+</script>
+
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eaf7f7",
+      "text": "#5c7291"
+    },
+    "button": {
+      "background": "#56cbdb",
+      "text": "#ffffff"
+    }
+  },
+  "content": {
+    "message": "This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies. Find out more.",
+    "dismiss": "Got it!",
+    "link": "Learn More"
+  }
+})});
+
+// Appararition barre de cookies
+</script>
+
+</body>
+
+</html>

@@ -1,7 +1,7 @@
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		HEADER
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
 
 
 .logo {
@@ -83,6 +83,7 @@ a {
 	color: #FF8D1B;
 }
 
+
 .navbar {
 	margin-bottom: 0;
 }
@@ -161,3 +162,74 @@ footer {
 #copyright {
 	color: #5F5F5F;
 }
+
+
+/* CSS de Gary ci-dessous */
+
+.title-section {
+	border-left: 3px solid #FF8D1B;
+	margin-left: 30px;
+	padding: 10px;
+	height: 50px;
+}
+
+.categories-movies {
+	display: inline-block;
+	list-style: none;
+	background-color: #E9E9E9;
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	color: #000;
+	padding: 7px;
+}
+
+.categories-movies:nth-child(1) {
+	display: inline-block;
+	list-style: none;
+	background-color: #FF8D1B;
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	color: #FFF;
+	padding: 7px;
+}
+
+
+.movie {
+	width: 180px;
+	text-align: center;
+	display: inline-block;
+}
+
+.movie-affiche {
+	width: 180px;
+	height: 250px;
+}
+
+.movie-title {
+	font-weight: bold;
+}
+
+.movie-categorie, .movie-years {
+	text-align: left;
+}
+
+.moreMoviesBtn {
+	background-color: #FF8D1B;
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	padding: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.moreMoviesBox {
+	display: none;
+	margin-top: 20px;
+}
+
