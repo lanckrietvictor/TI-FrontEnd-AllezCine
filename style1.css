@@ -224,11 +224,20 @@ footer {
 	color: #5F5F5F;
 }
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		FIRST 5 MOVIES
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-/* CSS de Gary ci-dessous */
+#firstFiveMovies {
+	text-align: center;
+}
 
-#section2 {
-	margin-top: 500px;
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		FEATURED MOVIES AND SERIES
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#section1 {
+	margin-top: 200px;
 }
 
 .title-section {
@@ -238,7 +247,7 @@ footer {
 	height: 50px;
 }
 
-.categories-movies {
+.categories-movie-series {
 	display: inline-block;
 	list-style: none;
 	background-color: #E9E9E9;
@@ -249,7 +258,7 @@ footer {
 	padding: 7px;
 }
 
-.categories-movies:nth-child(1) {
+.categories-movie-series:nth-child(1) {
 	display: inline-block;
 	list-style: none;
 	background-color: #FF8D1B;
@@ -260,22 +269,22 @@ footer {
 	padding: 7px;
 }
 
-.movie {
+.movie-series {
 	width: 180px;
 	text-align: center;
 	display: inline-block;
 }
 
-.movie-affiche {
+.movie-series-affiche {
 	width: 180px;
 	height: 250px;
 }
 
-.movie-title {
+.movie-series-title {
 	font-weight: bold;
 }
 
-.movie-categorie, .movie-years {
+.movie-series-categorie, .movie-series-years {
 	text-align: left;
 }
 
@@ -295,4 +304,76 @@ footer {
 .moreMoviesBox {
 	display: none;
 	margin-top: 20px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		FEATURED SERIES
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.moreSeriesBtn {
+	background-color: #FF8D1B;
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	padding: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.moreSeriesBox {
+	display: none;
+	margin-top: 20px;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		SOCIAL NETWORK
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#socialNetworkID {
+	position: fixed;
+	top: 300px;
+}
+
+.btnSocialNetwork {
+	width: 300px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: -230px;
+	border-radius: 50px;
+	transition: width 1s;
+	-webkit-transition: width 1s;
+}
+
+.btnSocialNetwork:hover {
+	width: 400px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: -230px;
+	border-radius: 50px;
+}
+
+#twitter {
+	background-color: #33CCFF;
+}
+#facebook {
+	background-color: #3B5998;
+}
+#dribbble {
+	background-color: #EA4C89;
+}
+#googlePlus {
+	background-color: #DD4B39;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		SHOP MOVIES
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#descriptionTrailer {
+	width: 500px;
+	height: 300px;
+	background-color: #FF8D1B;
 }
