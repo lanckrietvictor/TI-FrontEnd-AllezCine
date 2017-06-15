@@ -54,13 +54,11 @@ function verifAge() {
   var modalAge = document.getElementById("myModal");
 
   if (age < 18) {
-    console.log("Hop hop hop!");
+    alert("Hop hop hop! Redirection en cours!");
   }
   else {
-    console.log("Welcome");
-    modalAge.className += "close";
-    modalAge.setAttribute("data-dismiss", "modal");
-
+    alert("Welcome");
+    window.location.assign("enter.html");
   }
 
 }
