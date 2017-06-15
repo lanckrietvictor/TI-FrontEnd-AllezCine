@@ -92,9 +92,13 @@ a {
 		JUMBOTRON
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+#toowide {
+	margin-right: 0;
+}
+
 .jumbotron {
 	background-size: cover;
-	height: 200px;
+	height: 400px;
 	margin-top: 0;
 	padding-top: 0;
 }
@@ -104,7 +108,7 @@ a {
 }
 
 #filmcarousel {
-	height: 300px;
+	height: 400px;
 }
 
 .carousel-caption {
@@ -155,7 +159,7 @@ a {
 }
 
 .carousel-control {
-	top: 200px;
+	top: 300px;
 	opacity: 1;
 	border-radius: 5px;
 }
@@ -175,6 +179,45 @@ span.glyphicon-chevron-left, span.glyphicon-chevron-right {
     background-image: none
 }
 
+#slider {
+	padding-right: 0;
+}
+
+#sidebanner {
+	padding: 0;
+}
+
+.carousel-indicators {
+	position: inherit;
+	margin-left: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.carousel-indicators li {
+	text-indent: 0;
+	display: inherit;
+}
+
+#vertical {
+	display: block;
+	width: 100%
+}
+
+#vertical li {
+	height: 80px;
+	border: solid 1px red;
+	width: 100%;
+}
+
+#sidelink {
+	height: 100%;
+	line-height: 80px;
+}
+
+#sidelink img {
+	margin-left: 5px;
+}
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		FOOTER
