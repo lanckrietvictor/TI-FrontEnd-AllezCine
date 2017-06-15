@@ -151,7 +151,7 @@ a {
 	background-image: linear-gradient(to bottom, #FF8D1B 0%, #FF8D1B 100%);
 	opacity: 1;
 	animation-name: progressbar;
-	animation-duration: 5s; 
+	animation-duration: 5s;
 }
 
 .carousel-control {
@@ -373,7 +373,41 @@ footer {
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 #descriptionTrailer {
-	width: 500px;
+	width: 550px;
 	height: 300px;
 	background-color: #FF8D1B;
+}
+
+#descriptionTrailerLeft, #descriptionTrailerRight {
+	list-style: none;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		CONTACT US
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.contactBox {
+	background-color: #212121;
+	height: 250px;
+	width: 250px;
+	margin-right: 10px;
+	margin-bottom: 30px;																													/* /!\ A VERIFIER / ! \ */
+	color: #FFF;
+}
+
+.roundContact {
+	background-color: red;
+	width: 80px;
+	height: auto;
+
+}
+
+.btnSocialNetwork-contactBox {
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	padding: 7px;
+	margin-bottom: 3px;
 }
