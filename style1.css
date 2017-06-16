@@ -38,12 +38,8 @@
 
 #login {
 	background-color: #FF8D1B;
+	border: none;
 	color: white;
-	border-radius: 5px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-top: 2px;
 	padding-bottom: 2px;
 }
 

@@ -8,6 +8,8 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 </head>
 <body>
 	<header>
@@ -30,10 +32,12 @@
 					<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
 					<p id="telephone">(+000) 123 456 789</p>
 				</div>
-
-				<div class="col-md-1 col-sm-1 col-xs-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" id="login">
+				
+				<button type="button" data-toggle="modal" data-target="#modalConnect" id="login">
+				<div class="col-md-1 col-sm-1 col-xs-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
 					LOGIN
 				</div>
+				</button>
 
 			</div>
 		</div>
@@ -180,7 +184,7 @@
 </div>
 <div class="col-md-3 col-sm-3 col-xs-3" id="sidebanner">
 	<ol class="carousel-indicators" id="vertical">
-	<li class="active" data-slide-to="0" data-target="#myCarousel">
+		<li class="active" data-slide-to="0" data-target="#myCarousel">
 			<div class="row" id="sidelink">
 				<div class="col-md-5 col-sm-5 col-xs-5">
 					<img src="Photos/Tarzanlogo.png" alt="" style="width: 100%; margin-top: auto; margin-bottom: auto;">
@@ -675,6 +679,7 @@
 <section id="section4">
 	<h3 class="title-section">SHOP MOVIES</h3>
 
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -721,6 +726,7 @@
 					</div>
 				</div>
 			</div>
+
 						<!--	<div class="row">
 							<div class="col-md-2" style="margin-left:-30px;">
 							<ul id="descriptionTrailerLeft">
@@ -751,156 +757,223 @@
 				<p class="movie-series-years">2016</p>
 			</div>
 
-			<div class="movie-series">
-				<figure>
-					<img src="Photos/movies/badmoms.jpg" alt="affiche" class="movie-series-affiche"/>
-					<figcaption class="movie-series-title">Bad Moms</figcaption>
-				</figure>
-				<p class="movie-series-years">2016</p>
-			</div>
+							<div class="movie-series">
+								<figure>
+									<img src="Photos/movies/badmoms.jpg" alt="affiche" class="movie-series-affiche"/>
+									<figcaption class="movie-series-title">Bad Moms</figcaption>
+								</figure>
+								<p class="movie-series-years">2016</p>
+							</div>
 
-			<div class="movie-series">
-				<figure>
-					<img src="Photos/movies/starwars.jpg" alt="affiche" class="movie-series-affiche"/>
-					<figcaption class="movie-series-title">Star Wars VII</figcaption>
-				</figure>
-				<p class="movie-series-years">2016</p>
-			</div>
+							<div class="movie-series">
+								<figure>
+									<img src="Photos/movies/starwars.jpg" alt="affiche" class="movie-series-affiche"/>
+									<figcaption class="movie-series-title">Star Wars VII</figcaption>
+								</figure>
+								<p class="movie-series-years">2016</p>
+							</div>
 
-			<div class="movie-series">
-				<figure>
-					<img src="Photos/movies/xmenapocalypse.jpg" alt="affiche" class="movie-series-affiche"/>
-					<figcaption class="movie-series-title">X-Men Apocalypse</figcaption>
-				</figure>
-				<p class="movie-series-years">2016</p>
-			</div>
+							<div class="movie-series">
+								<figure>
+									<img src="Photos/movies/xmenapocalypse.jpg" alt="affiche" class="movie-series-affiche"/>
+									<figcaption class="movie-series-title">X-Men Apocalypse</figcaption>
+								</figure>
+								<p class="movie-series-years">2016</p>
+							</div>
 
-			<div class="movie-series">
-				<figure>
-					<img src="Photos/movies/peter.jpg" alt="affiche" class="movie-series-affiche"/>
-					<figcaption class="movie-series-title">Peter</figcaption>
-				</figure>
-				<p class="movie-series-years">2016</p>
-			</div>
+							<div class="movie-series">
+								<figure>
+									<img src="Photos/movies/peter.jpg" alt="affiche" class="movie-series-affiche"/>
+									<figcaption class="movie-series-title">Peter</figcaption>
+								</figure>
+								<p class="movie-series-years">2016</p>
+							</div>
 
-			<div class="movie-series">
-				<figure>
-					<img src="Photos/movies/secret_life_of_pets.jpg" alt="affiche" class="movie-series-affiche"/>
-					<figcaption class="movie-series-title">The Secret Life of Pets</figcaption>
-				</figure>
-				<p class="movie-series-years">2016</p>
-			</div>
+							<div class="movie-series">
+								<figure>
+									<img src="Photos/movies/secret_life_of_pets.jpg" alt="affiche" class="movie-series-affiche"/>
+									<figcaption class="movie-series-title">The Secret Life of Pets</figcaption>
+								</figure>
+								<p class="movie-series-years">2016</p>
+							</div>
 
-		</div>
-	</div>
+						</div>
+					</div>
 
 
-</section>
+				</section>
 
-<section id="section5">
-	<h3 class="title-section">CONTACT US</h3>
+				<section id="section5">
+					<h3 class="title-section">CONTACT US</h3>
 
-	<div class="roundContact">
-		<i class="fa fa-map-marker" aria-hidden="true"></i>
-	</div>
+					<div class="roundContact">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+					</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3 contactBox">
-				Address
-			</div>
-			<div class="col-md-3 contactBox">
-				Call<br />
-				+18044126235<br />
-				+18044126235<br />
-				+18044126235
-			</div>
-			<div class="col-md-3 contactBox">
-				Email<br />
-				exemple1@mail.com<br />
-				exemple2@mail.com<br />
-				exemple3@mail.com
-			</div>
-			<div class="col-md-3 contactBox">
-				Social Media
-				<div class="btnSocialNetwork-contactBox" id="facebook">
-					Facebook
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 contactBox">
+								Address
+							</div>
+							<div class="col-md-3 contactBox">
+								Call<br />
+								+18044126235<br />
+								+18044126235<br />
+								+18044126235
+							</div>
+							<div class="col-md-3 contactBox">
+								Email<br />
+								exemple1@mail.com<br />
+								exemple2@mail.com<br />
+								exemple3@mail.com
+							</div>
+							<div class="col-md-3 contactBox">
+								Social Media
+								<div class="btnSocialNetwork-contactBox" id="facebook">
+									Facebook
+								</div>
+								<div class="btnSocialNetwork-contactBox" id="twitter">
+									Twitter
+								</div>
+								<div class="btnSocialNetwork-contactBox" id="googlePlus">
+									Google+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<footer>	<!-- 	<footer class="navbar-fixed-bottom"> -->
+					<div class="container">
+						<div class="row subscribe">
+							<div class="col-md-3">
+								SUBSCRIBE TO US
+							</div>
+						</div>
+						<div class="row box">
+							<div class="col-md-4 col-sm-4 col-xs-4" id="subscribeborder">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Your email" id="emailbar">
+									<span class="input-group-btn">
+										<button class="btn" type="button" id="send">SEND</button>
+									</span>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-5 col-sm-offset-5 col-xs-offset-5 logo">
+
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<hr>
+							</div>
+						</div>
+
+						<div class="row bottomtext">
+							<div class="col-md-3 col-sm-3 col-xs-3" id="copyright">
+								&copy; Copyright message | All rights reserved | Design by Victor Lanckriet &amp; Gary Luypaert
+							</div>
+							<div class="col-md-1 col-sm-1 col-xs-1 col-md-offset-2">
+								MOVIES
+							</div>
+							<div class="col-md-1 col-sm-1 col-xs-1">
+								FAQ
+							</div>
+							<div class="col-md-1 col-sm-1 col-xs-1">
+								ACTION
+							</div>
+							<div class="col-md-1 col-sm-1 col-xs-1">
+								ADVENTURE
+							</div>
+							<div class="col-md-1 col-sm-1 col-xs-1">
+								COMEDY
+							</div>
+							<div class="col-md-1 col-sm-1 col-xs-1">
+								ICONS
+							</div>
+							<div class="col-md-1 col-sm-1 col-xs-1">
+								CONTACT US
+							</div>
+
+						</div>
+					</div>
 				</div>
-				<div class="btnSocialNetwork-contactBox" id="twitter">
-					Twitter
+			</footer>
+
+			<!--JavaScript popups and such-->
+
+			<!--<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Vérification de l'âge...</h4>
+						</div>
+						<div class="modal-body">
+							<p>Avant de pouvoir continuer à naviguer sur ce site, nous avons besoin d'être sûr
+								sûr que vous ayez au minimum 18 ans. Veuillez entrez votre âge dans le champ suivant et de valider celui-ci
+								en cliquant sur le bouton correspondant.</p>
+								<input type="text" placeholder="Entrez votre age ici" id="inputAge"/>
+								<button type="button" class="btn btn-success" onclick="verifAge()">Vérifier!</button>
+								<button type="button" class="btn btn-danger">Quitter</button>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="btnSocialNetwork-contactBox" id="googlePlus">
-					Google+
+
+				<div class="modal fade" id="modalConnect" role="dialog">
+					<div class="modal-dialog">
+
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h3 class="modal-title">Section membre</h3>
+							</div>
+							<div class="modal-body">
+								<form class="form-group">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-3 modalConnect-col">
+												<h4>Accédez à votre compte</h4>
+												<input name="text" placeholder="Votre identifiant" class="form-control"/>
+												<input name="password" placeholder="Mot de passe"  class="form-control"/>
+												<br /><label class="checkbox-inline">
+												<input type="checkbox" id="checkStayOnline" value="option1" /> Rester connecté
+											</label>
+											<button type="button" class="btn btn-default">Se Connecter</button>
+											<br /><a href="#">Oublié votre mot de passe ?</a>
+										</div>
+										<div class="col-md-3">
+											<h4>Pas encore de compte ?</h4>
+											<button type="button" class="btn btn-lg btn-info" id="create-modalConnect">Créer un compte</button><br />
+											<a href="#" id="cancel-modalConnect">Retour au site</a>
+										</div>
+									</div>
+								</div>
+
+
+							</form>
+
+						</div>
+					</div>
+
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
 
-<footer>	<!-- 	<footer class="navbar-fixed-bottom"> -->
-	<div class="container">
-		<div class="row subscribe">
-			<div class="col-md-3">
-				SUBSCRIBE TO US
-			</div>
-		</div>
-		<div class="row box">
-			<div class="col-md-4 col-sm-4 col-xs-4" id="subscribeborder">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Your email" id="emailbar">
-					<span class="input-group-btn">
-						<button class="btn" type="button" id="send">SEND</button>
-					</span>
-				</div>
-			</div>
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
 
-			<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-5 col-sm-offset-5 col-xs-offset-5 logo">
+			<script src="js/jQuery.js"></script>
 
-			</div>
-		</div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+			<!-- Insertion Cookie Conset -->
 
-		<div class="row">
-			<div class="col-md-12">
-				<hr>
-			</div>
-		</div>
-
-		<div class="row bottomtext">
-			<div class="col-md-3 col-sm-3 col-xs-3" id="copyright">
-				&copy; Copyright message | All rights reserved | Design by Victor Lanckriet &amp; Gary Luypaert
-			</div>
-			<div class="col-md-1 col-sm-1 col-xs-1 col-md-offset-2">
-				MOVIES
-			</div>
-			<div class="col-md-1 col-sm-1 col-xs-1">
-				FAQ
-			</div>
-			<div class="col-md-1 col-sm-1 col-xs-1">
-				ACTION
-			</div>
-			<div class="col-md-1 col-sm-1 col-xs-1">
-				ADVENTURE
-			</div>
-			<div class="col-md-1 col-sm-1 col-xs-1">
-				COMEDY
-			</div>
-			<div class="col-md-1 col-sm-1 col-xs-1">
-				ICONS
-			</div>
-			<div class="col-md-1 col-sm-1 col-xs-1">
-				CONTACT US
-			</div>
-
-		</div>
-	</div>
-</div>
-</footer>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-
-<script src="js/jQuery.js"></script>
-</body>
-</html>
+		</body>
+		</html>
