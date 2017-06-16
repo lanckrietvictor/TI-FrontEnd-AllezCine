@@ -204,11 +204,16 @@ span.glyphicon-chevron-left, span.glyphicon-chevron-right {
 	height: 80px;
 	border: solid 1px red;
 	width: 100%;
+	border-radius: 0;
+	margin: 0;
+	font-size: 8px;
+	overflow: hidden;
+	text-align: top;
+	padding-right: 5px;
 }
 
 #sidelink {
 	height: 100%;
-	line-height: 80px;
 }
 
 #sidelink img {
