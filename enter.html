@@ -47,21 +47,30 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 <!-- Insertion Cookie Conset -->
+
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+
+    function verifAge() {
+      var age = document.getElementById("inputAge").value;
+      var modalAge = document.getElementById("myModal");
+
+      if (age < 18) {
+        alert("Hop hop hop! Redirection en cours!");
+      }
+      else {
+        alert("Welcome");
+        window.location.assign("enter.html");
+      }
+
+    }
+</script>
+
 <script>
 
-function verifAge() {
-  var age = document.getElementById("inputAge").value;
-  var modalAge = document.getElementById("myModal");
 
-  if (age < 18) {
-    alert("Hop hop hop! Redirection en cours!");
-  }
-  else {
-    alert("Welcome");
-    window.location.assign("enter.html");
-  }
-
-}
 </script>
 
 <script>
