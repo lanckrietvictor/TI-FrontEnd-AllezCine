@@ -38,8 +38,12 @@
 
 #login {
 	background-color: #FF8D1B;
-	border: none;
 	color: white;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
 	padding-bottom: 2px;
 }
 
@@ -253,6 +257,7 @@ footer {
 	font-weight: bold;
 	font-size: 120%;
 	height: 300px;
+	width: 100%;
 }
 
 .subscribe {
@@ -294,8 +299,9 @@ footer {
 		FIRST 5 MOVIES
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-#firstFiveMovies {
+.firstFiveMovies {
 	text-align: center;
+	margin: 20px;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -303,7 +309,8 @@ footer {
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 #section1 {
-	margin-top: 200px;
+	margin-top: 50px;
+
 }
 
 .title-section {
@@ -335,14 +342,23 @@ footer {
 	padding: 7px;
 }
 
+/*.col-md-2 {
+	border: 1px solid red;
+}*/
+
+/*.movie-series-row {
+	border: 1px dashed green;
+
+}*/
+
 .movie-series {
-	width: 180px;
+	width: 190px;
 	text-align: center;
-	display: inline-block;
+
 }
 
 .movie-series-affiche {
-	width: 180px;
+	width: 170px;
 	height: 250px;
 }
 
@@ -439,7 +455,7 @@ footer {
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 #descriptionTrailer {
-	width: 550px;
+	width: 552px;
 	height: 300px;
 	background-color: #FF8D1B;
 }
@@ -448,9 +464,19 @@ footer {
 	list-style: none;
 }
 
+#trailerBox {
+
+}
+
+#shopID {
+}
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		CONTACT US
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#contact-big-box {
+	padding-left: 80px;
+}
 
 .contactBox {
 	background-color: #212121;
@@ -461,11 +487,23 @@ footer {
 	color: #FFF;
 }
 
-.roundContact {
-	background-color: red;
-	width: 80px;
-	height: auto;
+.contactBox-txt {
+	margin-top: 10px;
+}
 
+.contactBox-examples-title {
+	font-size: 24px;
+	list-style: none;
+}
+
+ul > .contactBox-examples {
+		line-height: 40px;
+		list-style: none;
+}
+
+.roundContact {
+	margin-top: -25px;
+	margin-left: 80px;
 }
 
 .btnSocialNetwork-contactBox {
@@ -476,4 +514,22 @@ footer {
 	color: #FFF;
 	padding: 7px;
 	margin-bottom: 3px;
+}
+
+
+
+.round-head-icon {
+	background-color: #FF8D1B;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 50px;
+	color: #FFF;
+	padding-top: 10px;
+
+}
+
+.icon-inButton-socialMedias {
+	float: left;
+	padding: 3px;
 }
