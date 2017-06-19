@@ -10,6 +10,15 @@
 	<link rel="stylesheet" type="text/css" href="style1.css">
 	<script src="script.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jQuery.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+	<!-- Insertion Cookie Conset -->
 </head>
 <body>
 	<header>
@@ -34,9 +43,9 @@
 				</div>
 				
 				<button type="button" data-toggle="modal" data-target="#modalConnect" id="login">
-				<div class="col-md-1 col-sm-1 col-xs-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-					LOGIN
-				</div>
+					<div class="col-md-1 col-sm-1 col-xs-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+						LOGIN
+					</div>
 				</button>
 
 			</div>
@@ -117,7 +126,7 @@
 							<img src="Photos/Wonderwoman.png" alt="Wonderwoman" style="width:100%; height: 400px;">
 							<div class="carousel-caption">
 								<div class="progress">
-									<div class="progress-bar" role="progressbar" aria-valuenow="70"
+									<div class="progress-bar" role="progressbar" aria-valuenow="100"
 									aria-valuemin="0" aria-valuemax="100" style="width:70%">
 									<span class="sr-only"></span>
 								</div>
@@ -131,7 +140,7 @@
 						<img src="Photos/baywatch.jpg" alt="Baywatch" style="width:100%; height: 400px;">
 						<div class="carousel-caption">
 							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="70"
+								<div class="progress-bar" role="progressbar" aria-valuenow="100"
 								aria-valuemin="0" aria-valuemax="100" style="width:70%">
 								<span class="sr-only"></span>
 							</div>
@@ -145,7 +154,7 @@
 					<img src="Photos/bossbaby.jpg" alt="Bossbaby" style="width:100%; height: 400px;">
 					<div class="carousel-caption">
 						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70"
+							<div class="progress-bar" role="progressbar" aria-valuenow="100"
 							aria-valuemin="0" aria-valuemax="100" style="width:70%">
 							<span class="sr-only"></span>
 						</div>
@@ -159,7 +168,7 @@
 				<img src="Photos/beautyandthebeast.jpg" alt="Beauty and the Beast" style="width:100%; height: 400px;">
 				<div class="carousel-caption">
 					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="70"
+						<div class="progress-bar" role="progressbar" aria-valuenow="100"
 						aria-valuemin="0" aria-valuemax="100" style="width:70%">
 						<span class="sr-only"></span>
 					</div>
@@ -182,30 +191,83 @@
 
 </div>
 </div>
-<div class="col-md-3 col-sm-3 col-xs-3" id="sidebanner">
+<div class="col-md-3 col-sm-3 col-xs-3 carousel" id="sidebanner">
 	<ol class="carousel-indicators" id="vertical">
-		<li class="active" data-slide-to="0" data-target="#myCarousel">
+		<li class="item active" data-slide-to="0" data-target="#myCarousel">
 			<div class="row" id="sidelink">
 				<div class="col-md-5 col-sm-5 col-xs-5">
-					<img src="Photos/Tarzanlogo.png" alt="" style="width: 100%; margin-top: auto; margin-bottom: auto;">
+					<img src="Photos/Tarzanlogo.png" alt="" style="width: 100%; max-height: 70px; margin-top: auto; margin-bottom: auto;">
+				</div>
+				<div class="col-md-7 col-sm-7 col-xs-7">
+					<b>Lorem ipsum dolor</b>
+					<br>
+					<p>
+						sit amet, consectetur adipiscing elit. Maecenas facilisis tincidunt ex in luctus. Vestibulum accumsan lectus in erat vehicula accumsan. Maecenas viverra, massa eu tempor pulvinar, augue tortor auctor nisl, quis pretium est ex at sapien. 
+					</p>
 				</div>
 			</div>
 		</li>
-		<li class="" data-slide-to="1" data-target="#myCarousel">
-
+		<li class="item" data-slide-to="1" data-target="#myCarousel">
+			<div class="row" id="sidelink">
+				<div class="col-md-5 col-sm-5 col-xs-5">
+					<img src="Photos/wonderwomanlogo.jpg" alt="" style="width: 100%; max-height: 70px; margin-top: auto; margin-bottom: auto;">
+				</div>
+				<div class="col-md-7 col-sm-7 col-xs-7">
+					<b>Lorem ipsum dolor</b>
+					<br>
+					<p>
+						sit amet, consectetur adipiscing elit. Maecenas facilisis tincidunt ex in luctus. Vestibulum accumsan lectus in erat vehicula accumsan. Maecenas viverra, massa eu tempor pulvinar, augue tortor auctor nisl, quis pretium est ex at sapien. 
+					</p>
+				</div>
+			</div>
 		</li>
-		<li class="" data-slide-to="2" data-target="#myCarousel">
-
+		<li class="item" data-slide-to="2" data-target="#myCarousel">
+			<div class="row" id="sidelink">
+				<div class="col-md-5 col-sm-5 col-xs-5">
+					<img src="Photos/baywatchlogo.jpg" alt="" style="width: 100%; max-height: 70px; margin-top: auto; margin-bottom: auto;">
+				</div>
+				<div class="col-md-7 col-sm-7 col-xs-7">
+					<b>Lorem ipsum dolor</b>
+					<br>
+					<p>
+						sit amet, consectetur adipiscing elit. Maecenas facilisis tincidunt ex in luctus. Vestibulum accumsan lectus in erat vehicula accumsan. Maecenas viverra, massa eu tempor pulvinar, augue tortor auctor nisl, quis pretium est ex at sapien. 
+					</p>
+				</div>
+			</div>
 		</li>
-		<li class="" data-slide-to="3" data-target="#myCarousel">
-
+		<li class="item" data-slide-to="3" data-target="#myCarousel">
+			<div class="row" id="sidelink">
+				<div class="col-md-5 col-sm-5 col-xs-5">
+					<img src="Photos/bossbabylogo.jpg" alt="" style="width: 100%; max-height: 70px; margin-top: auto; margin-bottom: auto;">
+				</div>
+				<div class="col-md-7 col-sm-7 col-xs-7">
+					<b>Lorem ipsum dolor</b>
+					<br>
+					<p>
+						sit amet, consectetur adipiscing elit. Maecenas facilisis tincidunt ex in luctus. Vestibulum accumsan lectus in erat vehicula accumsan. Maecenas viverra, massa eu tempor pulvinar, augue tortor auctor nisl, quis pretium est ex at sapien. 
+					</p>
+				</div>
+			</div>
 		</li>
-		<li class="" data-slide-to="4" data-target="#myCarousel">
-
+		<li class="item" data-slide-to="4" data-target="#myCarousel">
+			<div class="row" id="sidelink">
+				<div class="col-md-5 col-sm-5 col-xs-5">
+					<img src="Photos/beautyandthebeastlogo.jpg" alt="" style="width: 100%; max-height: 70px; margin-top: auto; margin-bottom: auto;">
+				</div>
+				<div class="col-md-7 col-sm-7 col-xs-7">
+					<b>Lorem ipsum dolor</b>
+					<br>
+					<p>
+						sit amet, consectetur adipiscing elit. Maecenas facilisis tincidunt ex in luctus. Vestibulum accumsan lectus in erat vehicula accumsan. Maecenas viverra, massa eu tempor pulvinar, augue tortor auctor nisl, quis pretium est ex at sapien. 
+					</p>
+				</div>
+			</div>
 		</li>
 	</ol>
 </div>
 </div>
+
+
 
 
 <!-- Ajout des boutons pour les réseaux sociaux -->
@@ -680,52 +742,52 @@
 	<h3 class="title-section">SHOP MOVIES</h3>
 
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<embed width="650px" height="300px" src="https://www.youtube.com/embed/xnv__ogkt0M"></embed>
-				</div>
-				<div class="col-md-6" id="descriptionTrailer">
-					<h3>Captain America : Civil War</h3>
-					<div class="container">
-						<table>
-						  <tr>
-						    <td>
-						      Résumé :
-						    </td>
-						    <td width="350px">
-						      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam repudiandae reiciendis quod soluta ab officia sint!
-						    </td>
-						  </tr>
-						  <tr>
-						    <td>
-						      Date de sortie :
-						    </td>
-						    <td>
-						      &nbsp;6 mai 2016
-						    </td>
-						  </tr>
-						  <tr>
-						    <td>
-						      Genre :
-						    </td>
-						    <td>
-						     &nbsp;Action
-						    </td>
-						  </tr>
-						  <tr>
-						    <td>
-						      Prix :
-						    </td>
-						    <td>
-						     &nbsp;Free!
-						    </td>
-						  </tr>
-						</table>
-						</div>
-					</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<embed width="650px" height="300px" src="https://www.youtube.com/embed/xnv__ogkt0M"></embed>
+			</div>
+			<div class="col-md-6" id="descriptionTrailer">
+				<h3>Captain America : Civil War</h3>
+				<div class="container">
+					<table>
+						<tr>
+							<td>
+								Résumé :
+							</td>
+							<td width="350px">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam repudiandae reiciendis quod soluta ab officia sint!
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Date de sortie :
+							</td>
+							<td>
+								&nbsp;6 mai 2016
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Genre :
+							</td>
+							<td>
+								&nbsp;Action
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Prix :
+							</td>
+							<td>
+								&nbsp;Free!
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
+		</div>
+	</div>
 
 						<!--	<div class="row">
 							<div class="col-md-2" style="margin-left:-30px;">
@@ -747,15 +809,15 @@
 						</div>
 					</div> -->
 
-	<div class="container">
-		<div class="col-md-12">
-			<div class="movie-series">
-				<figure>
-					<img src="Photos/movies/civilwar.jpg" alt="affiche" class="movie-series-affiche"/>
-					<figcaption class="movie-series-title">Civil War</figcaption>
-				</figure>
-				<p class="movie-series-years">2016</p>
-			</div>
+					<div class="container">
+						<div class="col-md-12">
+							<div class="movie-series">
+								<figure>
+									<img src="Photos/movies/civilwar.jpg" alt="affiche" class="movie-series-affiche"/>
+									<figcaption class="movie-series-title">Civil War</figcaption>
+								</figure>
+								<p class="movie-series-years">2016</p>
+							</div>
 
 							<div class="movie-series">
 								<figure>
@@ -964,16 +1026,6 @@
 
 				</div>
 			</div>
-
-			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-			<!-- Include all compiled plugins (below), or include individual files as needed -->
-			<script src="js/bootstrap.min.js"></script>
-
-			<script src="js/jQuery.js"></script>
-
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-			<!-- Insertion Cookie Conset -->
 
 		</body>
 		</html>
