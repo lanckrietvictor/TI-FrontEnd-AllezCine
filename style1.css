@@ -193,23 +193,43 @@ span.glyphicon-chevron-left, span.glyphicon-chevron-right {
 .carousel-indicators li {
 	text-indent: 0;
 	display: inherit;
-}
-
-#vertical {
-	display: block;
-	width: 100%
-}
-
-#vertical li {
 	height: 80px;
-	border: solid 1px red;
+	width: 100%;
+	border-radius: 0;
+	border: solid 1px #030202;
+	margin: 0;
+	font-size: 8px;
+	overflow: hidden;
+	text-align: left;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #212121;
+	color: #FF8D1B;
+}
+
+	.carousel-indicators .active {
+	text-indent: 0;
+	display: inherit;
+	height: 80px;
+	border: solid 1px #030202;
 	width: 100%;
 	border-radius: 0;
 	margin: 0;
 	font-size: 8px;
 	overflow: hidden;
-	text-align: top;
+	text-align: left;
 	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #FF8D1B;
+	color: #212121;
+
+}
+
+#vertical {
+	display: block;
+	width: 100%
 }
 
 #sidelink {
@@ -219,6 +239,8 @@ span.glyphicon-chevron-left, span.glyphicon-chevron-right {
 #sidelink img {
 	margin-left: 5px;
 }
+
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		FOOTER
