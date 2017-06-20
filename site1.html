@@ -299,131 +299,149 @@
 </div>
 </div>
 
+<!-- First Five Movie -->
+
   <section id="section1">
     <div class="container thumbnail">
       <div class="row">
-        <div class="col-md-2 movie-series firstFiveMovies" >
+        <div class="col-md-2 movie-series-box firstFiveMovies" data-toggle="modal" data-target="#modalMovie" onclick="trytest()">
             <figure>
-              <img src="Photos/movies/citizensoldier.jpg" alt="affiche" class="movie-series-affiche" />
-              <figcaption class="movie-series-title">Citizen Soldier</figcaption>
+              <img src="Photos/movies/justiceleague.jpg" alt="affiche" class="movie-series-affiche" />
+              <figcaption class="movie-series-title" id="test-title">Justice League</figcaption>
             </figure>
             <div class="movie-series-abc">
-              <span class="movie-series-categorie">Genre</span>
-              <span class="movie-series-years">2016</span>
+              <span class="movie-series-categorie">Action</span>
+              <span class="movie-series-years">2017</span>
             </div>
         </div>
 
-        <div class="col-md-2 movie-series firstFiveMovies">
+        <div class="col-md-2 movie-series-box firstFiveMovies" data-toggle="modal" data-target="#modalMovie">
             <figure>
-              <img src="Photos/movies/xmenapocalypse.jpg" alt="affiche" class="movie-series-affiche" />
-              <figcaption class="movie-series-title">X-Men</figcaption>
+              <img src="Photos/movies/starwars8.jpg" alt="affiche" class="movie-series-affiche" />
+              <figcaption class="movie-series-title">Star Wars VIII</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
-            <p class="movie-series-years">2016</p>
+            <p class="movie-series-categorie">Sciences Fiction</p>
+            <p class="movie-series-years">2017</p>
         </div>
-        <div class="col-md-2 movie-series firstFiveMovies">
+        <div class="col-md-2 movie-series-box firstFiveMovies" data-toggle="modal" data-target="#modalMovie">
             <figure>
-              <img src="Photos/movies/greater.jpg" alt="affiche" class="movie-series-affiche" />
-              <figcaption class="movie-series-title">Greater</figcaption>
+              <img src="Photos/movies/wonderwoman.jpg" alt="affiche" class="movie-series-affiche" />
+              <figcaption class="movie-series-title">Wonder Woman</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
-            <p class="movie-series-years">2016</p>
+            <p class="movie-series-categorie">Action</p>
+            <p class="movie-series-years">2017</p>
         </div>
-        <div class="col-md-2 movie-series firstFiveMovies">
+        <div class="col-md-2 movie-series-box firstFiveMovies" data-toggle="modal" data-target="#modalMovie">
             <figure>
-              <img src="Photos/movies/lightBTocean.jpg" alt="affiche" class="movie-series-affiche" />
-              <figcaption class="movie-series-title">Light Between Oceans</figcaption>
+              <img src="Photos/movies/johnwick2.jpg" alt="affiche" class="movie-series-affiche" />
+              <figcaption class="movie-series-title">John Wick 2</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
-            <p class="movie-series-years">2016</p>
+            <p class="movie-series-categorie">Action</p>
+            <p class="movie-series-years">2017</p>
         </div>
-        <div class="col-md-2 movie-series firstFiveMovies">
+        <div class="col-md-2 movie-series-box firstFiveMovies" data-toggle="modal" data-target="#modalMovie">
             <figure>
-              <img src="Photos/movies/thebfg.jpg" alt="affiche" class="movie-series-affiche" />
-              <figcaption class="movie-series-title">The BFG</figcaption>
+              <img src="Photos/movies/getout.jpg" alt="affiche" class="movie-series-affiche" />
+              <figcaption class="movie-series-title">Get Out</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
-            <p class="movie-series-years">2016</p>
+            <p class="movie-series-categorie">Drama</p>
+            <p class="movie-series-years">2017</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Modal firstFiveMovies -->
+
+  <div class="modal fade" id="modalMovie" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal-movie-title">Movie</h3>
+        </div>
+        <div class="modal-body">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fin modal login-->
+
+
+<!-- Ajout de la section FEATURED MOVIES -->
+
   <section id="section2">
     <h3 class="title-section">FEATURED MOVIES</h3>
 
     <ul>
-      <li class="categories-movie-series">All</li>
-      <li class="categories-movie-series">Actions</li>
-      <li class="categories-movie-series">Policiers</li>
-      <li class="categories-movie-series">&nbsp;</li>
+      <li class="categories-movie-series" id="all-btn-movie">All</li>
+      <li class="categories-movie-series" id="actions-btn-movie">Actions</li>
+      <li class="categories-movie-series" id="comedy-btn-movie">Comedy</li>
+      <li class="categories-movie-series" id="scify-btn-movie">Sciences Fiction</li>
     </ul>
 
     <div class="container movie-series-row">
       <div class="row">
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie dramaMovie">
             <figure>
               <img src="Photos/movies/godscompass.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">God's Compass</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Drama</p>
             <p class="movie-series-years">2016</p>
         </div>
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie comedyMovie">
             <figure>
               <img src="Photos/movies/badmoms.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Bad Moms</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Comedy</p>
             <p class="movie-series-years">2016</p>
         </div>
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie actionMovie">
             <figure>
               <img src="Photos/movies/jasonbourne.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Jason Bourne</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Action</p>
             <p class="movie-series-years">2016</p>
         </div>
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie actionMovie">
             <figure>
               <img src="Photos/movies/rezort.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Rezort</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Action</p>
             <p class="movie-series-years">2016</p>
         </div>
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie comedyMovie">
             <figure>
               <img src="Photos/movies/peter.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Peter</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Comedy</p>
             <p class="movie-series-years">2016</p>
         </div>
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie scifyMovie">
             <figure>
               <img src="Photos/movies/izrat88.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Izrat 88</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Sciences Fiction</p>
             <p class="movie-series-years">2016</p>
         </div>
 
-      </div>
-    </div>
-
-    <div class="container movie-series-row">
-      <div class="row">
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie actionMovie">
             <figure>
               <img src="Photos/movies/wardogs.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">War Dogs</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Action</p>
             <p class="movie-series-years">2016</p>
         </div>
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie">
             <figure>
               <img src="Photos/movies/otherside.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">The Other Side</figcaption>
@@ -431,23 +449,23 @@
             <p class="movie-series-categorie">Genre</p>
             <p class="movie-series-years">2016</p>
         </div>
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie actionMovie">
             <figure>
               <img src="Photos/movies/civilwar.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Civil War</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Action</p>
             <p class="movie-series-years">2016</p>
         </div>
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie comedyMovie">
             <figure>
               <img src="Photos/movies/secret_life_of_pets.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">The Secret Life of Pets</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Comedy</p>
             <p class="movie-series-years">2016</p>
         </div>
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie">
             <figure>
               <img src="Photos/movies/jungleBook.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">The Jungle Book</figcaption>
@@ -455,12 +473,12 @@
             <p class="movie-series-categorie">Genre</p>
             <p class="movie-series-years">2016</p>
         </div>
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box movie actionMovie">
             <figure>
               <img src="Photos/movies/asscreed.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Assassin's Creed</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Action</p>
             <p class="movie-series-years">2016</p>
         </div>
       </div>
@@ -468,55 +486,58 @@
 
       <div class="container moreMoviesBox">
         <div class="row">
-          <div class="col-md-2 movie-series">
+          <div class="col-md-2 movie-series-box movie scifyMovie">
               <figure>
                 <img src="Photos/movies/starwars.jpg" alt="affiche" class="movie-series-affiche" />
                 <figcaption class="movie-series-title">Star Wars VII</figcaption>
               </figure>
-              <p class="movie-series-categorie">Genre</p>
+              <p class="movie-series-categorie">Sciences Fiction</p>
               <p class="movie-series-years">2016</p>
           </div>
-          <div class="col-md-2 movie-series">
+          <div class="col-md-2 movie-series-box movie actionMovie">
               <figure>
                 <img src="Photos/movies/vforvendetta.jpg" alt="affiche" class="movie-series-affiche" />
                 <figcaption class="movie-series-title">V for Vendetta</figcaption>
               </figure>
-              <p class="movie-series-categorie">Genre</p>
+              <p class="movie-series-categorie">Action</p>
               <p class="movie-series-years">2016</p>
           </div>
-          <div class="col-md-2 movie-series">
+          <div class="col-md-2 movie-series-box movie actionMovie">
               <figure>
                 <img src="Photos/movies/inception.jpg" alt="affiche" class="movie-series-affiche" />
                 <figcaption class="movie-series-title">Inception</figcaption>
               </figure>
-              <p class="movie-series-categorie">Genre</p>
+              <p class="movie-series-categorie">Action</p>
               <p class="movie-series-years">2016</p>
           </div>
-          <div class="col-md-2 movie-series">
+          <div class="col-md-2 movie-series-box movie actionMovie">
               <figure>
                 <img src="Photos/movies/batmanvssuperman.jpg" alt="affiche" class="movie-series-affiche" />
                 <figcaption class="movie-series-title">Batman VS Superman</figcaption>
               </figure>
-              <p class="movie-series-categorie">Genre</p>
+              <p class="movie-series-categorie">Action</p>
               <p class="movie-series-years">2016</p>
           </div>
-          <div class="col-md-2 movie-series">
+          <div class="col-md-2 movie-series-box movie comedyMovie">
               <figure>
                 <img src="Photos/movies/youngoffenders.jpg" alt="affiche" class="movie-series-affiche" />
                 <figcaption class="movie-series-title">Young Offenders</figcaption>
               </figure>
-              <p class="movie-series-categorie">Genre</p>
+              <p class="movie-series-categorie">Comedy</p>
               <p class="movie-series-years">2016</p>
           </div>
-          <div class="col-md-2 movie-series">
+          <div class="col-md-2 movie-series-box movie actionMovie">
               <figure>
                 <img src="Photos/movies/watchmen.jpg" alt="affiche" class="movie-series-affiche" />
                 <figcaption class="movie-series-title">Watchmen</figcaption>
               </figure>
-              <p class="movie-series-categorie">Genre</p>
+              <p class="movie-series-categorie">Action</p>
               <p class="movie-series-years">2016</p>
           </div>
 
+        </div>
+        <div class="lessMoviesBtn">
+          Moins de films
         </div>
       </div>
 
@@ -532,130 +553,115 @@
     <h3 class="title-section">FEATURED SERIES TV</h3>
 
     <ul>
-      <li class="categories-movie-series">All</li>
-      <li class="categories-movie-series">Actions</li>
-      <li class="categories-movie-series">Policiers</li>
-      <li class="categories-movie-series">&nbsp;</li>
+      <li class="categories-movie-series" id="all-btn-serie">All</li>
+      <li class="categories-movie-series" id="actions-btn-serie">Actions</li>
+      <li class="categories-movie-series" id="comedy-btn-serie">Comedy</li>
+      <li class="categories-movie-series" id="drama-btn-serie">Dramas</li>
+      <li class="categories-movie-series" id="scify-btn-serie">Sciences Fiction</li>
     </ul>
 
     <div class="container movie-series-row">
       <div class="row">
-        <div class="col-md-2 movie-series">
-
+        <div class="col-md-2 movie-series-box serie dramaSerie">
             <figure>
               <img src="Photos/series/blackmirror.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Black Mirror</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Dramas</p>
             <p class="movie-series-years">2016</p>
-
         </div>
-        <div class="col-md-2 movie-series">
-
+        <div class="col-md-2 movie-series-box serie actionSerie">
             <figure>
               <img src="Photos/series/sons_of_anarchy.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Sons of Anarchy</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Action</p>
             <p class="movie-series-years">2016</p>
-
         </div>
-        <div class="col-md-2 movie-series">
-
+        <div class="col-md-2 movie-series-box serie actionSerie">
             <figure>
               <img src="Photos/series/banshee.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Banshee</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Action</p>
             <p class="movie-series-years">2016</p>
-
         </div>
-        <div class="col-md-2 movie-series">
-
+        <div class="col-md-2 movie-series-box serie scifySerie">
             <figure>
               <img src="Photos/series/westworld.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Westworld</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Sciences Fiction</p>
             <p class="movie-series-years">2016</p>
-
         </div>
-        <div class="col-md-2 movie-series">
-
+        <div class="col-md-2 movie-series-box serie actionSerie">
             <figure>
               <img src="Photos/series/blacksails.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Black Sails</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Action</p>
             <p class="movie-series-years">2016</p>
-
         </div>
-        <div class="col-md-2 movie-series">
-
+        <div class="col-md-2 movie-series-box serie scifySerie">
             <figure>
               <img src="Photos/series/strangerthings.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Stranger Things</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Sciences Fiction</p>
             <p class="movie-series-years">2016</p>
-
         </div>
-      </div>
 
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box serie comedySerie">
             <figure>
               <img src="Photos/series/friends.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Friends</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Comedy</p>
             <p class="movie-series-years">2016</p>
         </div>
 
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box serie comedySerie">
             <figure>
               <img src="Photos/series/himym.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">How I Met Your Mother</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Comedy</p>
             <p class="movie-series-years">2016</p>
         </div>
 
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box serie comedySerie">
             <figure>
               <img src="Photos/series/scrubs.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Scrubs</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Comedy</p>
             <p class="movie-series-years">2016</p>
         </div>
 
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box serie comedySerie">
             <figure>
               <img src="Photos/series/community.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Community</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Comedy</p>
             <p class="movie-series-years">2016</p>
         </div>
 
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box serie actionSerie">
             <figure>
               <img src="Photos/series/spartacus.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Spartacus</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Action</p>
             <p class="movie-series-years">2016</p>
         </div>
 
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box serie actionSerie">
             <figure>
               <img src="Photos/series/got.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Games of Thrones</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Action</p>
             <p class="movie-series-years">2016</p>
         </div>
       </div>
@@ -663,60 +669,63 @@
 
     <div class="container moreSeriesBox">
       <div class="row">
-        <div class="col-md-2 movie-series">
+        <div class="col-md-2 movie-series-box serie dramaSerie">
             <figure>
               <img src="Photos/series/dexter.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Dexter</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Drama</p>
             <p class="movie-series-years">2016</p>
         </div>
 
-          <div class="col-md-2 movie-series">
+          <div class="col-md-2 movie-series-box serie comedySerie">
             <figure>
               <img src="Photos/series/misfits.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Misfits</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Comedy</p>
             <p class="movie-series-years">2016</p>
           </div>
 
-          <div class="col-md-2 movie-series">
+          <div class="col-md-2 movie-series-box serie comedySerie">
             <figure>
               <img src="Photos/series/modernfamily.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Modern Family</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Comedy</p>
             <p class="movie-series-years">2016</p>
           </div>
 
-          <div class="col-md-2 movie-series">
+          <div class="col-md-2 movie-series-box serie comedySerie">
             <figure>
               <img src="Photos/series/theoffice.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">The Office</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Comedy</p>
             <p class="movie-series-years">2016</p>
           </div>
 
-          <div class="col-md-2 movie-series">
+          <div class="col-md-2 movie-series-box serie dramaSerie">
             <figure>
               <img src="Photos/series/13reasons.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">13 Reasons Why</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Drama</p>
             <p class="movie-series-years">2016</p>
           </div>
 
-          <div class="col-md-2 movie-series">
+          <div class="col-md-2 movie-series-box serie comedySerie">
             <figure>
               <img src="Photos/series/rickmorty.jpg" alt="affiche" class="movie-series-affiche" />
               <figcaption class="movie-series-title">Rick and Morty</figcaption>
             </figure>
-            <p class="movie-series-categorie">Genre</p>
+            <p class="movie-series-categorie">Comedy</p>
             <p class="movie-series-years">2016</p>
           </div>
 
+        </div>
+        <div class="lessSeriesBtn">
+          Moins de séries
         </div>
       </div>
     </div>
@@ -768,28 +777,6 @@
         </div>
       </div>
     </div>
-
-  <!--      <div class="container">
-          <div class="row">
-            <div class="col-md-3" style="margin-left:-30px;">
-              <ul id="descriptionTrailerLeft">
-                <li>Resume :</li>
-                <li>Date de sortie :</li>
-                <li>Genre :</li>
-                <li>Prix :</li>
-              </ul>
-            </div>
-            <div class="col-md-8" style="">
-              <ul id="descriptionTrailerRight">
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam repudiandae reiciendis quod soluta ab officia sint! Accusantium esse ratione, tempora voluptatum numquam voluptate saepe ducimus? Saepe ullam, quod ut distinctio!</li>
-                <li>6 mai 2016</li>
-                <li>Action</li>
-                <li>Free</li>
-              </ul>
-            </div>
-          </div>
-      </div> -->
-
 
       </div>
     </div>

@@ -352,7 +352,7 @@ footer {
 
 }*/
 
-.movie-series {
+.movie-series-box {
 	width: 190px;
 	text-align: center;
 
@@ -369,6 +369,7 @@ footer {
 
 .movie-series-categorie {
 	float: left;
+	font-weight: bold;
 }
 
 .movie-series-years {
@@ -378,6 +379,19 @@ footer {
 .moreMoviesBtn {
 	background-color: #FF8D1B;
 	width: 120px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	padding: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.lessMoviesBtn {
+	background-color: #FF8D1B;
+	width: 125px;
 	height: 35px;
 	text-align: center;
 	font-weight: bold;
@@ -413,6 +427,19 @@ footer {
 .moreSeriesBox {
 	display: none;
 	margin-top: 20px;
+}
+
+.lessSeriesBtn {
+	background-color: #FF8D1B;
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	padding: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		SOCIAL NETWORK

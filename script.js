@@ -80,3 +80,84 @@ window.cookieconsent.initialise({
   }
 })
 });
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  Tri des films
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+function filterMovies(genre, valeur) {
+  var genreMovie = document.getElementsByClassName(genre);
+  for (var i = 0; i < genreMovie.length; ++i) {
+    genreMovie[i].style.display = valeur;
+  }
+}
+
+document.getElementById("all-btn-movie").onclick = function() {
+  filterMovies("movie", "block");
+}
+
+document.getElementById("actions-btn-movie").onclick = function() {
+  filterMovies("movie", "none");
+  filterMovies("actionMovie", "block");
+}
+
+document.getElementById("comedy-btn-movie").onclick = function() {
+  filterMovies("movie", "none");
+  filterMovies("comedyMovie", "block");
+}
+
+document.getElementById("scify-btn-movie").onclick = function() {
+  filterMovies("movie", "none");
+  filterMovies("scifyMovie", "block");
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  Tri des films
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+function filterSeries(genre, valeur) {
+  var genreMovie = document.getElementsByClassName(genre);
+  for (var i = 0; i < genreMovie.length; ++i) {
+    genreMovie[i].style.display = valeur;
+  }
+}
+
+document.getElementById("all-btn-serie").onclick = function() {
+  filterSeries("serie", "block");
+}
+
+document.getElementById("actions-btn-serie").onclick = function() {
+  filterSeries("serie", "none");
+  filterSeries("actionSerie", "block");
+}
+
+document.getElementById("comedy-btn-serie").onclick = function() {
+  filterSeries("serie", "none");
+  filterSeries("comedySerie", "block");
+}
+
+document.getElementById("scify-btn-serie").onclick = function() {
+  filterSeries("serie", "none");
+  filterSeries("scifySerie", "block");
+}
+
+document.getElementById("drama-btn-serie").onclick = function() {
+  filterSeries("serie", "none");
+  filterSeries("dramaSerie", "block");
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  First Five Movies
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+function trytest() {
+
+var title = document.getElementsByClassName("movie-series-title");
+var movieTitle = document.getElementById("modal-movie-title");
+
+movieTitle.innerHTML = title;
+console.log(title);
+
+}
