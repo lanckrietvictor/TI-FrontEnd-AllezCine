@@ -20,11 +20,41 @@ function verifAge() {
 
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  Login window
+  Back To The Top Arrow
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+		window.onload = function () {
+			buttonCreation();
+			document.getElementById("myBtn").addEventListener("click", topFunction);
+			document.getElementById("myBtn").setAttribute("style", "display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99;	border: none; outline: none;	background-color: #FF8D1B; color: white; cursor: pointer; padding: 15px;			border-radius: 50%;");
+		};
 
+		function buttonCreation() {
+			var btn = document.createElement("BUTTON");
+			btn.setAttribute("id", "myBtn");
+				var icon = document.createElement("span");
+				icon.className = "glyphicon glyphicon-arrow-up";
+			//document.getElementById("myBtn").innerHTML = icon
+			btn.appendChild(icon);
+			document.body.appendChild(btn);
+			console.log(icon);
+		}
 
+		function topFunction() {
+			console.log("click registered")
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
 
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
