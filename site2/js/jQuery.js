@@ -1,25 +1,22 @@
 $(document).ready(function() {
 
-
-
-  $(".moreMoviesBtn").click(function() {
-    $(".moreMoviesBox").slideToggle("slow");
-    $(".moreMoviesBtn").hide();
+  $("a[href^='#']").click(function() {
+    var target = $(this).attr("href");
+    $("html, body").stop().animate({scrollTop: $(target).offset().top}, 1000);
   });
 
-  $(".lessMoviesBtn").click(function() {
-    $(".moreMoviesBox").slideToggle("slow");
-    $(".moreMoviesBtn").show();
+  $("#story-title").click(function(){
+    $("#story-panel").slideToggle("slow");
+  });
+  $("#series-title").click(function(){
+    $("#series-panel").slideToggle("slow");
+  });
+  $("#series-next-title").click(function(){
+    $("#series-next-panel").slideToggle("slow");
+  });
+  $("#movies-title").click(function(){
+    $("#movies-panel").slideToggle("slow");
   });
 
-  $(".moreSeriesBtn").click(function() {
-    $(".moreSeriesBox").slideToggle("slow");
-    $(".moreSeriesBtn").hide();
-  });
-
-  $(".lessSeriesBtn").click(function() {
-    $(".moreSeriesBox").slideToggle("slow");
-    $(".moreSeriesBtn").show();
-  });
 
 });
