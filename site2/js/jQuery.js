@@ -5,6 +5,13 @@ $(document).ready(function() {
     $("html, body").stop().animate({scrollTop: $(target).offset().top}, 1000);
   });
 
+  $("#story-title").mouseenter(function(){
+    $(".bandeau-img").css("margin-top","15px");
+  });
+  $("#story-title").mouseleave(function(){
+    $(".bandeau-img").css("margin-top","10px");
+  });
+
   $("#story-title").click(function(){
     $("#story-panel").slideToggle("slow");
   });
