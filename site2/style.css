@@ -1,0 +1,31 @@
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		HEADER
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.navbar-default {
+	background-color: #037C00;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+color: #FFF;
+background-color: #2BAF2B;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		FOOTER
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+footer {
+	background-color: #212121;
+	color: #FF8D1B;
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
