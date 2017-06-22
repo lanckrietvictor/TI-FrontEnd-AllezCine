@@ -5,25 +5,52 @@ $(document).ready(function() {
     $("html, body").stop().animate({scrollTop: $(target).offset().top}, 1000);
   });
 
-  $("#story-title").mouseenter(function(){
-    $(".bandeau-img").css("margin-top","15px");
+  $("#story").mouseenter(function(){
+    $("#bandeau-blue").css("margin-top","15px");
   });
-  $("#story-title").mouseleave(function(){
-    $(".bandeau-img").css("margin-top","10px");
+  $("#story").mouseleave(function(){
+    $("#bandeau-blue").css("margin-top","10px");
   });
 
-  $("#story-title").click(function(){
+  $("#series").mouseenter(function(){
+    $("#bandeau-orange").css("margin-top","15px");
+  });
+  $("#series").mouseleave(function(){
+    $("#bandeau-orange").css("margin-top","10px");
+  });
+
+  $("#series-next").mouseenter(function(){
+    $("#bandeau-purple").css("margin-top","15px");
+  });
+  $("#series-next").mouseleave(function(){
+    $("#bandeau-purple").css("margin-top","10px");
+  });
+
+  $("#movies").mouseenter(function(){
+    $("#bandeau-red").css("margin-top","15px");
+  });
+  $("#movies").mouseleave(function(){
+    $("#bandeau-red").css("margin-top","10px");
+  });
+
+  $("#story").click(function(){
     $("#story-panel").slideToggle("slow");
   });
-  $("#series-title").click(function(){
+  $("#series").click(function(){
     $("#series-panel").slideToggle("slow");
   });
-  $("#series-next-title").click(function(){
+  $("#series-next").click(function(){
     $("#series-next-panel").slideToggle("slow");
   });
-  $("#movies-title").click(function(){
+  $("#movies").click(function(){
     $("#movies-panel").slideToggle("slow");
   });
+
+  var angle = 0;
+  setInterval(function(){
+      angle+=3;
+     $("#logo-footer").rotate(angle);
+},50);
 
 
 });
