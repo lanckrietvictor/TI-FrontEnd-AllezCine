@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
   $("a[href^='#']").click(function() {
     var target = $(this).attr("href");
     $("html, body").stop().animate({scrollTop: $(target).offset().top}, 1000);
@@ -46,11 +47,11 @@ $(document).ready(function() {
     $("#movies-panel").slideToggle("slow");
   });
 
+
   var angle = 0;
   setInterval(function(){
       angle+=3;
      $("#logo-footer").rotate(angle);
 },50);
-
 
 });
