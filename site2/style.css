@@ -1,3 +1,27 @@
+body {
+	margin: 0;
+	padding: 0;
+	margin-top: 100px;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		HEADER
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.navbar-default {
+	background-color: #037C00;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+color: #FFF;
+background-color: #2BAF2B;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		PRESENTATION
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 #presentationIndicators {
     background-color: black;
     bottom: 450px;
@@ -34,4 +58,86 @@
 
 .active {
 	margin: 1px !important;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		BIOGRAPHIE
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.bandeau {
+	height: 60px;
+	width: 250px;
+	/*position: absolute;
+	bottom: 150px;*/
+}
+
+.bandeau-img {
+	margin-left:35px;
+	margin-top:10px;
+
+}
+
+.turtle-flat {
+	background-color: #037C00;
+	width: 250px;
+	height: 250px;
+	border-radius: 25%;
+	padding-top: 60px;
+}
+
+#story-title, #series-title, #series-next-title, #movies-title {
+	text-align: center;
+}
+
+#story-panel, #series-panel, #series-next-panel, #movies-panel {
+	display: none;
+	border: 1px solid black;
+}
+
+#bandeau-blue {
+		background-color: #00adef;
+}
+
+#bandeau-orange {
+		background-color: #f7941d;
+}
+
+#bandeau-purple {
+		background-color: #6c4a9e;
+}
+
+#bandeau-red {
+		background-color: #ed1b24;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		FOOTER
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+footer {
+	background-color: #212121;
+	color: #FFF;
+	height: 200px;
+	width: 100%;
+	text-align: center;
+
+}
+
+.logo-socialNetwork {
+	width: 35px;
+}
+
+.mini-turtle-footer {
+	display: inline-block;
+
+}
+
+.turtle-footer {
+	width: 50px;
+}
+
+#footer-socialNetwork {
+	list-style: none;
+	text-align: left;
 }
