@@ -64,6 +64,10 @@ background-color: #2BAF2B;
 		BIOGRAPHIE
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+#biographie {
+	background-color: #2BAF2B;
+}
+
 .bandeau {
 	height: 60px;
 	width: 250px;
@@ -125,6 +129,32 @@ background-color: #2BAF2B;
 		background-color: #ed1b24;
 }
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		PHOTOGRAPHIES
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#photographies {
+
+	text-align: center;
+	background-color: #212121;
+}
+
+#gallery {
+}
+
+.img-gallery {
+
+	display: inline-block;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		GOODIES
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#goodies {
+	background-color: #FFF;
+	height: 200px;
+}
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		FOOTER

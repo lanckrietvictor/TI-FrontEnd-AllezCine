@@ -49,9 +49,13 @@ $(document).ready(function() {
 
 
   var angle = 0;
-  setInterval(function(){
-      angle+=3;
+  setInterval(function() {
+     angle+=3;
      $("#logo-footer").rotate(angle);
-},50);
+    },50);
+
+  $(".turtle-flat").mouseenter(function() {
+    $(".turtle-flat").addClass("animated bounce");
+  });
 
 });
