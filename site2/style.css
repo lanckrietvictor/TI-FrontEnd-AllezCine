@@ -74,7 +74,7 @@ background-color: #2BAF2B;
 .bandeau-img {
 	margin-left:35px;
 	margin-top:10px;
-
+	width: 180px;
 }
 
 .turtle-flat {
@@ -85,14 +85,29 @@ background-color: #2BAF2B;
 	padding-top: 60px;
 }
 
-#story-title, #series-title, #series-next-title, #movies-title {
+.turtle-title {
 	text-align: center;
+	cursor: pointer;
 }
 
 #story-panel, #series-panel, #series-next-panel, #movies-panel {
 	display: none;
-	border: 1px solid black;
+	border: 3px solid #B25C11;
 }
+
+.style-panel {
+	background-color: #F0B21F;
+	border-radius: 5px;
+	padding: 10px;
+	width: 250px;
+	height: 400px;
+	text-align: center;
+}
+
+.btn-link {
+	bottom:0;
+}
+
 
 #bandeau-blue {
 		background-color: #00adef;
@@ -118,26 +133,53 @@ background-color: #2BAF2B;
 footer {
 	background-color: #212121;
 	color: #FFF;
-	height: 200px;
+	height: 300px;
 	width: 100%;
 	text-align: center;
+}
 
+.footer-text-special {
+	font-family: "Turtles";
+	font-size: 34px;
+	color: #87C43F;
 }
 
 .logo-socialNetwork {
-	width: 35px;
+	width: 40px;
+	margin-bottom: 5px;
+
 }
 
 .mini-turtle-footer {
 	display: inline-block;
-
 }
 
 .turtle-footer {
 	width: 50px;
 }
 
+#logo-footer {
+	width: 130px;
+	margin-top: 80px;
+	float: left;
+}
+
 #footer-socialNetwork {
 	list-style: none;
 	text-align: left;
+	cursor: pointer;
+}
+
+.name-socialNetwork {
+	font-size: 18px;
+}
+
+#test {
+	color: #000;
+}
+
+#test-btn {
+	background-color: #037C00;
+	border: 1px solid #87C43F;
+	color: #FFF;
 }
