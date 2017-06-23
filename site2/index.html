@@ -448,14 +448,11 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
 <div class="container">
   <h3>Contactez-nous</h3>
   <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-6">
       <h4>Contactez-nous</h4>
       <p>
         Une envie de nous contacter ? Une suggestion à nous faire ? N'hésitez pas à nous contacter en remplissant le formulaire.
       </p>
-    </div>
-    <div class="col-md-3">
-
     </div>
     <div class="col-md-6">
       <form id="contact-form">
@@ -526,12 +523,12 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
         <img src="img/pizza-footer.png" alt="logo-footer" id="logo-footer"/>
       </div>
       <div class="col-md-4">
-        <h3 class="footer-text-special">Abonnez-vous !</h3>
-        <input type="email" class="form-control" placeholder="Votre adresse mail" id="test"/><br />
-        <button type="submit" class="btn btn-default" id="test-btn">Je m'abonne!</button>
+        <h3 class="footer-text-special">Abonnez-vous</h3>
+        <input type="email" class="form-control" placeholder="Votre adresse mail" id="newsletter-input"/><br />
+        <button type="submit" class="btn btn-default" id="newsletter-btn">Je m'abonne!</button>
       </div>
       <div class="col-md-4">
-        <h3 class="footer-text-special">Rejoignez-nous !</h3>
+        <h3 class="footer-text-special">Suivez-nous</h3>
         <ul id="footer-socialNetwork">
           <!--<li class="footer-text-special">Rejoignez-nous!</li>-->
           <li><img src="img/SocialNetwork/facebook.png" class="logo-socialNetwork" /></li>
@@ -564,26 +561,39 @@ function sendContact() {
   var emailContact = document.getElementById("email").value;
   var subjectContact = document.getElementById("subject").value;
   var messageContact = document.getElementById("message").value;
+  var condition = true;
 
   document.getElementById("name-modale").innerHTML =
     "Bonjour " + firstnameContact +" ! <br /><br /> Voici ce qui va nous être envoyé. Si tout est correct, veuillez confirmer en cliquant sur le bouton d'envoi.<br /> "
     + "<br />Nom : " + nameContact + "<br />Prénom : " + firstnameContact + "<br />Adresse email : " + emailContact + "<br />Sujet : " + subjectContact + "<br />Message : " + messageContact;
 
+  while(condition) {
+
   if (nameContact === "") {
     document.getElementById("name").style.backgroundColor = "#e74c3c ";
     document.getElementById("alert-name").style.display = "block";
+    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
+    condition = true;
   }
   if (firstnameContact === "") {
     document.getElementById("firstname").style.backgroundColor = "#e74c3c ";
     document.getElementById("alert-firstname").style.display = "block";
+    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
+    condition = true;
   }
   if (emailContact === "") {
     document.getElementById("email").style.backgroundColor = "#e74c3c ";
     document.getElementById("alert-email").style.display = "block";
+    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
+    condition = true;
   }
   if (messageContact === "") {
     document.getElementById("message").style.backgroundColor = "#e74c3c ";
     document.getElementById("alert-message").style.display = "block";
+    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
+    condition = true;
+  }
+  condition = false;
   }
 
 }
