@@ -157,6 +157,23 @@ background-color: #2BAF2B;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		CONTACT
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#contact {
+	margin-bottom: 50px;
+}
+
+#name, #firstname, #email, #subject, #message {
+	border-radius: 1px;
+}
+
+.alert  {
+	margin-top: 3px;
+	display: none;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		FOOTER
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
@@ -175,17 +192,10 @@ footer {
 }
 
 .logo-socialNetwork {
-	width: 40px;
-	margin-bottom: 5px;
-
-}
-
-.mini-turtle-footer {
-	display: inline-block;
-}
-
-.turtle-footer {
 	width: 50px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+
 }
 
 #logo-footer {
@@ -198,10 +208,11 @@ footer {
 	list-style: none;
 	text-align: left;
 	cursor: pointer;
+	text-align: center;
 }
 
-.name-socialNetwork {
-	font-size: 18px;
+#footer-socialNetwork > li {
+	display: inline-block;
 }
 
 #test {
