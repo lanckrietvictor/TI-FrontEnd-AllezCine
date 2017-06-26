@@ -2,18 +2,25 @@
   Vérifier l'age
   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-  function verifAge() {
-  	var age = document.getElementById("inputAge").value;
-  	var modalAge = document.getElementById("myModal");
 
-  	if (age < 18) {
-  		alert("Hop hop hop! Redirection en cours!");
-  		window.location.assign("site2.html");
-  	}
-  	else {
-  		alert("Welcome");
-  		window.location.assign("enter.html");
-  	}
+function verifAge() {
+
+
+
+  var age = document.getElementById("inputAge").value;
+  var modalAge = document.getElementById("myModalAge");
+
+  if (age < 18) {
+    alert("Hop hop hop! Redirection en cours!");
+    window.location.assign("site2/index.html");
+  }
+  else {
+    alert("Welcome");
+  //  modalAge.style.display = "none";
+    modalAge.setAttribute("data-backdrop", "false");
+  //  window.location.assign("enter.html");
+  }
+
 
   }
 
@@ -59,31 +66,105 @@
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   Cookies
-  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-  window.addEventListener("load", function(){
-  	window.cookieconsent.initialise({
-  		"palette": {
-  			"popup": {
-  				"background": "#eaf7f7",
-  				"text": "#5c7291"
-  			},
-  			"button": {
-  				"background": "#56cbdb",
-  				"text": "#ffffff"
-  			}
-  		},
-  		"content": {
-  			"message": "This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies. Find out more.",
-  			"dismiss": "Got it!",
-  			"link": "Learn More"
-  		}
-  	})
-  });
-
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eaf7f7",
+      "text": "#5c7291"
+    },
+    "button": {
+      "background": "#56cbdb",
+      "text": "#ffffff"
+    }
+  },
+  "content": {
+    "message": "This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies. Find out more.",
+    "dismiss": "Got it!",
+    "link": "Learn More"
+  }
+})
+});
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  Slider shop
-  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  Tri des films
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-  
+
+function filterMovies(genre, valeur) {
+  var genreMovie = document.getElementsByClassName(genre);
+  for (var i = 0; i < genreMovie.length; ++i) {
+    genreMovie[i].style.display = valeur;
+  }
+}
+
+document.getElementById("all-btn-movie").onclick = function() {
+  filterMovies("movie", "block");
+}
+
+document.getElementById("actions-btn-movie").onclick = function() {
+  filterMovies("movie", "none");
+  filterMovies("actionMovie", "block");
+}
+
+document.getElementById("comedy-btn-movie").onclick = function() {
+  filterMovies("movie", "none");
+  filterMovies("comedyMovie", "block");
+}
+
+document.getElementById("scify-btn-movie").onclick = function() {
+  filterMovies("movie", "none");
+  filterMovies("scifyMovie", "block");
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  Tri des films
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+function filterSeries(genre, valeur) {
+  var genreMovie = document.getElementsByClassName(genre);
+  for (var i = 0; i < genreMovie.length; ++i) {
+    genreMovie[i].style.display = valeur;
+  }
+}
+
+document.getElementById("all-btn-serie").onclick = function() {
+  filterSeries("serie", "block");
+}
+
+document.getElementById("actions-btn-serie").onclick = function() {
+  filterSeries("serie", "none");
+  filterSeries("actionSerie", "block");
+}
+
+document.getElementById("comedy-btn-serie").onclick = function() {
+  filterSeries("serie", "none");
+  filterSeries("comedySerie", "block");
+}
+
+document.getElementById("scify-btn-serie").onclick = function() {
+  filterSeries("serie", "none");
+  filterSeries("scifySerie", "block");
+}
+
+document.getElementById("drama-btn-serie").onclick = function() {
+  filterSeries("serie", "none");
+  filterSeries("dramaSerie", "block");
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  First Five Movies
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+function trytest() {
+
+var title = document.getElementsByClassName("movie-series-title");
+var movieTitle = document.getElementById("modal-movie-title");
+
+movieTitle.innerHTML = title;
+console.log(title);
+
+}
