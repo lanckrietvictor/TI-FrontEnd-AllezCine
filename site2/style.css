@@ -1,8 +1,19 @@
+@@font-face {
+	font-family: Turtles;
+	src=url(font/Turtles.otf);
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	margin-top: 100px;
 }
+
+.section-title {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		HEADER
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -66,6 +77,7 @@ background-color: #2BAF2B;
 
 #biographie {
 	background-color: #2BAF2B;
+	padding-top: 30px;
 }
 
 .bandeau {
@@ -99,8 +111,24 @@ background-color: #2BAF2B;
 	border: 3px solid #B25C11;
 }
 
+#story-panel {
+	background-color: #00adef;
+}
+
+#series-panel {
+	background-color: #f7941d;
+}
+
+#series-next-panel {
+	background-color: #6c4a9e;
+}
+
+#movies-panel {
+	background-color: #ed1b24;
+}
+
 .style-panel {
-	background-color: #F0B21F;
+	/*background-color: #F0B21F;*/
 	border-radius: 5px;
 	padding: 10px;
 	width: 250px;
@@ -153,7 +181,54 @@ background-color: #2BAF2B;
 
 #goodies {
 	background-color: #FFF;
-	height: 200px;
+}
+
+.goodies-box  {
+	text-align: center;
+}
+
+.goodies-box  > img {
+	height: 150px;
+}
+
+.input-quantity {
+	width: 40px;
+}
+
+/* !!!!!!!!!!!!! PANIER !!!!!!!!!!!!!!!!!!*/
+
+#panier {
+	width: 120px;
+	height: 120px;
+	background-color: #F0B21F;
+	position: fixed;
+	top: 300px;
+	right: 0px;
+	border-radius: 5px;
+	z-index: 10;
+	display: none;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		CONTACT
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#contact {
+	margin-bottom: 50px;
+}
+
+#name, #firstname, #email, #subject, #message {
+	border-radius: 1px;
+}
+
+#gif-contact {
+	width: 50%;
+	margin-left: 100px;
+}
+
+.alert  {
+	margin-top: 3px;
+	display: none;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -175,17 +250,10 @@ footer {
 }
 
 .logo-socialNetwork {
-	width: 40px;
-	margin-bottom: 5px;
-
-}
-
-.mini-turtle-footer {
-	display: inline-block;
-}
-
-.turtle-footer {
 	width: 50px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+
 }
 
 #logo-footer {
@@ -198,18 +266,21 @@ footer {
 	list-style: none;
 	text-align: left;
 	cursor: pointer;
+	text-align: center;
 }
 
-.name-socialNetwork {
-	font-size: 18px;
+#footer-socialNetwork > li {
+	display: inline-block;
+	margin-top: 30px;
 }
 
-#test {
+#newsletter-input {
 	color: #000;
+	margin-top: 50px;
 }
 
-#test-btn {
+#newsletter-btn {
 	background-color: #037C00;
-	border: 1px solid #87C43F;
+	border: 1px solid #037C00;
 	color: #FFF;
 }

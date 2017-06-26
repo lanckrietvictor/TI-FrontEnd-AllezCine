@@ -47,7 +47,7 @@
 
         <a class="navbar-brand" href="#">
 
-          <img alt="logo" src="img/logo-01.png" height="30px">
+          <img alt="logo" src="images/header-logo.png" height="30px">
 
         </a>
 
@@ -186,6 +186,7 @@
 
 
 <section id="biographie">
+  <h3 class="section-title">Biographie</h3>
 
   <div class="container">
 
@@ -384,7 +385,7 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
 <section id="photographies">
 
 <div class="container" id="gallery">
-  <h3>Galerie </h3>
+  <h3 class="section-title">Galerie </h3>
   <div class="row">
     <div class="col-md-12">
 
@@ -431,52 +432,161 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
 
 </section>
 
-
 <!-- Quatrième Section -->
-
 
 <section id="goodies">
 
+<div class="container">
+  <h3 class="section-title">Goodies</h3>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Porte-clé</h4>
+          <img src="images/shop/keychain.png" />
+          <br />
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity" id="input-keychain"/>
+            <button type="button" class="btn-more-shop" onclick="addToPanier()">+</button>
+            <button type="button" class="btn-less-shop" onclick="TakeOffToPanier()">-</button>
+          </p>
+          <p>
+            Prix : <span id="priceCost">10</span>€
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Peluche</h4>
+          <img src="images/shop/peluche.png" />
+          <br />
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity"/>
+            <button type="button">+</button>
+            <button type="button">-</button>
+          </p>
+          <p>
+            Prix : <span class="priceCost">20</span>€
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Tee-Shirt</h4>
+          <img src="images/shop/shirt-01.png" />
+          <br />
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity"/>
+            <button type="button">+</button>
+            <button type="button">-</button>
+          </p>
+          <p>
+            Prix : 15€
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Blu-Ray</h4>
+          <img src="images/shop/bluray.jpg" />
+          <br />
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity"/>
+            <button type="button">+</button>
+            <button type="button">-</button>
+          </p>
+          <p>
+            Prix : 25€
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Panier -->
+
+<div class="container" id="panier">
+  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="font-size:24px;"></span>
+  <p>Montant du panier :</p>
+  <p id="montant-panier"></p>
+</div>
 
 </section>
 
 <!-- Cinquième Section -->
 
-
 <section id="contact">
 
 <div class="container">
-  <h3>Contactez-nous</h3>
+  <h3 class="section-title">Contactez-nous</h3>
   <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-6" style="text-align:center;">
       <h4>Contactez-nous</h4>
       <p>
         Une envie de nous contacter ? Une suggestion à nous faire ? N'hésitez pas à nous contacter en remplissant le formulaire.
       </p>
+      <img src="images/gif-message.gif" class="img-responsive" alt="gifForm" id="gif-contact"/>
     </div>
-    <div class="col-md-5">
-      
-    </div>
-    <div class="col-md-4">
-    <form>
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Votre Nom" id="name" />
-        <input type="text" class="form-control" placeholder="Votre Prénom" id="firstname" />
+    <div class="col-md-6">
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Votre Nom" id="name" />
+          <div class="alert alert-danger" role="alert" id="alert-name">
+            Ce champs doit être renseigné
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Votre Prénom" id="firstname" />
+          <div class="alert alert-danger" role="alert" id="alert-firstname">
+            Ce champs doit être renseigné
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Votre Email" id="email"/>
+          <div class="alert alert-danger" role="alert" id="alert-email">
+            Ce champs doit être renseigné
+          </div>
+        </div>
+        <div class="form-group">
+          <select class="form-control" id="subject">
+            <option>Une suggestion ?</option>
+            <option>Une envie de rejoindre l'équipe ?</option>
+            <option>Autre ?</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="5" placeholder="Votre message" id="message"></textarea>
+          <div class="alert alert-danger" role="alert" id="alert-message">
+            Ce champs doit être renseigné
+          </div>
+        </div>
 
-
-      <input type="email" class="form-control" placeholder="Votre Email" id="email"/>
-      <select class="form-control" id="sujet">
-        <option>Une suggestion ?</option>
-        <option>Une envie de rejoindre l'équipe ?</option>
-        <option>Autre ?</option>
-      </select>
-      <textarea class="form-control" rows="5" id="message"></textarea>
-      <button type="submit" class="btn btn-default" id="submitBtn">Envoyer</button>
-      </div>
-    </form>
+        <button type="button" class="btn btn-success" id="submitBtn" onclick="sendContact()" data-target="#modal-contact" data-toggle="modal">Envoyer&nbsp;<span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
+
+<!-- Modal SEND MESSAGE -->
+  <div class="modal fade" id="modal-contact" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Contactez nous</h3>
+        </div>
+        <div class="modal-body">
+          <p id="name-modale">
+
+          </p>
+          <button type="button" class="btn btn-success" onclick="sendToContact()">Confirmer et envoyer <span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </section>
 
@@ -488,18 +598,18 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
         <img src="img/pizza-footer.png" alt="logo-footer" id="logo-footer"/>
       </div>
       <div class="col-md-4">
-        <h3 class="footer-text-special">Abonnez-vous !</h3>
-        <input type="email" class="form-control" placeholder="Votre adresse mail" id="test"/><br />
-        <button type="submit" class="btn btn-default" id="test-btn">Je m'abonne!</button>
+        <h3 class="footer-text-special">Abonnez-vous</h3>
+        <input type="email" class="form-control" placeholder="Votre adresse mail" id="newsletter-input"/><br />
+        <button type="submit" class="btn btn-default" id="newsletter-btn">Je m'abonne!</button>
       </div>
       <div class="col-md-4">
-        <h3 class="footer-text-special">Rejoignez-nous !</h3>
+        <h3 class="footer-text-special">Suivez-nous</h3>
         <ul id="footer-socialNetwork">
           <!--<li class="footer-text-special">Rejoignez-nous!</li>-->
-          <li><img src="img/SocialNetwork/facebook.png" class="logo-socialNetwork" />&nbsp;<span class="name-socialNetwork">Facebook</span></li>
-          <li><img src="img/SocialNetwork/twitter.png" class="logo-socialNetwork" />&nbsp;<span class="name-socialNetwork">Twitter</span></li>
-          <li><img src="img/SocialNetwork/instagram.png" class="logo-socialNetwork" />&nbsp;<span class="name-socialNetwork">Instagram</span></li>
-          <li><img src="img/SocialNetwork/youtube.png" class="logo-socialNetwork" />&nbsp;<span class="name-socialNetwork">YouTube</span></li>
+          <li><img src="img/SocialNetwork/facebook.png" class="logo-socialNetwork" /></li>
+          <li><img src="img/SocialNetwork/twitter.png" class="logo-socialNetwork" /></li>
+          <li><img src="img/SocialNetwork/instagram.png" class="logo-socialNetwork" /></li>
+          <li><img src="img/SocialNetwork/youtube.png" class="logo-socialNetwork" /></li>
         </ul>
 
       </div>
@@ -510,44 +620,89 @@ Copyright © Victor L. &amp; Gary L. 2017, tous droits réservés
 
 </footer>
 
-<!-- <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 ">
-        <img src="img/SocialNetwork/facebook.png" class="logo-socialNetwork" /> Facebook
-        <img src="img/SocialNetwork/twitter.png" class="logo-socialNetwork" /> Twitter
-        <img src="img/SocialNetwork/instagram.png" class="logo-socialNetwork" /> Instagram
-        <img src="img/SocialNetwork/linkedin.png" class="logo-socialNetwork" /> LinkedIn
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-1">
-        <img src="img/Tortues_Ninja.png" alt="logo-footer" width="120px" />
-      </div>
-    </div>
-  </div>
-
-<ul>
-  <li class="mini-turtle-footer"><img src="img/turtle1.jpg" class="turtle-footer" alt="mini-turtle-footer" /></li>
-  <li class="mini-turtle-footer"><img src="img/turtle1.jpg" class="turtle-footer" alt="mini-turtle-footer" /></li>
-  <li class="mini-turtle-footer"><img src="img/turtle1.jpg" class="turtle-footer" alt="mini-turtle-footer" /></li>
-  <li class="mini-turtle-footer"><img src="img/turtle1.jpg" class="turtle-footer" alt="mini-turtle-footer" /></li>
-</ul>
-
-Copyright © Victor L. &amp; Gary L. 2017, tous droits réservés
-
-</footer>-->
-
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <script src="lightbox/lightbox.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/jQuery.js"></script>
   <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
 
+<script>
+
+function sendContact() {
+  var nameContact = document.getElementById("name").value;
+  var firstnameContact = document.getElementById("firstname").value;
+  var emailContact = document.getElementById("email").value;
+  var subjectContact = document.getElementById("subject").value;
+  var messageContact = document.getElementById("message").value;
+  var condition = true;
+
+  document.getElementById("name-modale").innerHTML =
+    "Bonjour " + firstnameContact +" ! <br /><br /> Voici ce qui va nous être envoyé. Si tout est correct, veuillez confirmer en cliquant sur le bouton d'envoi.<br /> "
+    + "<br />Nom : " + nameContact + "<br />Prénom : " + firstnameContact + "<br />Adresse email : " + emailContact + "<br />Sujet : " + subjectContact + "<br />Message : " + messageContact;
+
+  while(condition) {
+
+  if (nameContact === "") {
+    document.getElementById("name").style.backgroundColor = "#e74c3c ";
+    document.getElementById("alert-name").style.display = "block";
+    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
+    condition = true;
+  }
+  if (firstnameContact === "") {
+    document.getElementById("firstname").style.backgroundColor = "#e74c3c ";
+    document.getElementById("alert-firstname").style.display = "block";
+    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
+    condition = true;
+  }
+  if (emailContact === "") {
+    document.getElementById("email").style.backgroundColor = "#e74c3c ";
+    document.getElementById("alert-email").style.display = "block";
+    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
+    condition = true;
+  }
+  if (messageContact === "") {
+    document.getElementById("message").style.backgroundColor = "#e74c3c ";
+    document.getElementById("alert-message").style.display = "block";
+    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
+    condition = true;
+  }
+  condition = false;
+  }
+
+}
+
+function submitGood() {
+  alert("Le message a bien été envoyé !");
+}
+
+
+function addToPanier() {
+  var a = parseInt(document.getElementById("input-keychain").value);
+  var price = 10;
+  var totalKeychain = document.getElementById("input-keychain").value = a + 1;
+
+  totalKeychain;
+  document.getElementById("panier").style.display = "block";
+  document.getElementById("montant-panier").innerHTML = totalKeychain * price + "€";
+
+}
+
+function TakeOffToPanier() {
+  var a = parseInt(document.getElementById("input-keychain").value);
+  var price = 10;
+  var totalKeychain = document.getElementById("input-keychain").value = a - 1;
+
+  totalKeychain;
+  document.getElementById("panier").style.display = "block";
+  document.getElementById("montant-panier").innerHTML = totalKeychain * price + "€";
+
+}
+
+
+</script>
 
 </body>
 
