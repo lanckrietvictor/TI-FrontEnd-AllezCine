@@ -1,4 +1,3 @@
-
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		HEADER
 		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -42,8 +41,7 @@
 			color: white;
 			border-radius: 5px;
 			text-align: center;
-			padding-top: 2px;
-			padding-bottom: 2px;
+			width: 100px;
 		}
 
 		.navbar-default {
@@ -59,6 +57,7 @@
 		.navbar-default {
 			border-color: none;
 		}
+
 
 		.tabs {
 			display: flex;
@@ -301,6 +300,7 @@
 		.firstFiveMovies {
 			text-align: center;
 			margin: 20px;
+			cursor: pointer;
 		}
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -309,7 +309,6 @@
 
 		#section1 {
 			margin-top: 50px;
-
 		}
 
 		.title-section {
@@ -328,128 +327,112 @@
 			text-align: center;
 			color: #000;
 			padding: 7px;
+			border-radius: 0;
 		}
 
-		.categories-movie-series:nth-child(1) {
+		.featured-bar {
 			display: inline-block;
-			list-style: none;
-			background-color: #FF8D1B;
-			width: 120px;
-			height: 35px;
-			text-align: center;
-			color: #FFF;
-			padding: 7px;
 		}
 
-/*.col-md-2 {
-	border: 1px solid red;
-	}*/
+.movie-series-box {
+	width: 190px;
+	text-align: center;
 
-/*.movie-series-row {
-	border: 1px dashed green;
+}
 
-	}*/
+.movie-series-affiche {
+	width: 170px;
+	height: 250px;
+}
 
-	.movie-series {
-		width: 190px;
-		text-align: center;
+.movie-series-title {
+	font-weight: bold;
+}
 
-	}
+.movie-series-categorie {
+	float: left;
+	font-weight: bold;
+}
 
-	.movie-series-affiche {
-		width: 170px;
-		height: 250px;
-	}
+.movie-series-years {
+	float:right;
+}
 
-	.movie-series-title {
-		font-weight: bold;
-	}
+.btnsMoreLess {
+	width: 130px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-	.movie-series-categorie {
-		float: left;
-	}
+.moreMoviesBtn {
+	background-color: #FF8D1B;
+	width: 130px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	margin-bottom: 20px;
+	border-radius: 0;
+}
 
-	.movie-series-years {
-		float:right;
-	}
+.lessMoviesBtn {
+	background-color: #FF8D1B;
+	width: 130px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	margin-bottom: 20px;
+	border-radius: 0;
+}
 
-	.moreMoviesBtn {
-		background-color: #FF8D1B;
-		width: 120px;
-		height: 35px;
-		text-align: center;
-		font-weight: bold;
-		color: #FFF;
-		padding: 7px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 20px;
-	}
+.moreMoviesBox {
+	display: none;
+	margin-top: 20px;
+}
 
-	.moreMoviesBox {
-		display: none;
-		margin-top: 20px;
-	}
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		FEATURED SERIES
-		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-		.moreSeriesBtn {
-			background-color: #FF8D1B;
-			width: 120px;
-			height: 35px;
-			text-align: center;
-			font-weight: bold;
-			color: #FFF;
-			padding: 7px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 20px;
-		}
+.moreSeriesBtn {
+	background-color: #FF8D1B;
+	width: 130px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	margin-bottom: 20px;
+	border-radius: 0;
+}
 
-		.moreSeriesBox {
-			display: none;
-			margin-top: 20px;
-		}
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		SOCIAL NETWORK
-		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.moreSeriesBox {
+	display: none;
+	margin-top: 20px;
+}
 
-		#socialNetworkID {
-			position: fixed;
-			top: 300px;
-		}
+.lessSeriesBtn {
+	background-color: #FF8D1B;
+	width: 130px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	margin-bottom: 20px;
+	border-radius: 0;
+}
 
-		.btnSocialNetwork {
-			width: 300px;
-			height: 50px;
-			margin-top: 10px;
-			margin-left: -230px;
-			border-radius: 50px;
-			transition: width 1s;
-			-webkit-transition: width 1s;
-		}
-
-		.btnSocialNetwork:hover {
-			width: 400px;
-			height: 50px;
-			margin-top: 10px;
-			margin-left: -230px;
-			border-radius: 50px;
-		}
-
-		#twitter {
+		.twitter-contactBox {
 			background-color: #33CCFF;
-
 		}
-		#facebook {
+		.facebook-contactBox {
 			background-color: #3B5998;
 		}
-		#dribbble {
+		.dribbble-contactBox {
 			background-color: #EA4C89;
 		}
-		#googlePlus {
+		.googlePlus-contactBox {
 			background-color: #DD4B39;
 		}
 
@@ -475,6 +458,10 @@
 		#shopID {
 		}
 
+		#test {																																				/* TEST HERE */
+			margin-left: -31px;
+		}
+
 		#shopControllers {
 			position: relative;
 			width: 50px;
@@ -482,7 +469,7 @@
 			bottom: 20px;
 		}
 
-		.shopContorl {
+		.shopControl {
 			background-color: black;
 		}
 
@@ -492,6 +479,12 @@
 
 		#contact-big-box {
 			padding-left: 80px;
+		}
+
+		.contact-form {
+			width: 700px;
+			padding:0;
+			margin: 0;
 		}
 
 		.contactBox {
@@ -593,17 +586,18 @@
 		SOCIAL MEDIA
 		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+
 		.socialmedia {
 			position: fixed;
 			float: left;
-			margin-left: -70px;
+			margin-left: -75px;
 			padding-left: 5px;
 			padding-right: 15px;
 			border-top-right-radius: 30px;
 			border-bottom-right-radius: 30px;
 			color: white;
 			font-weight: bold;
-			height: 40px;
+			height: 45px;
 			width: 120px;
 			line-height: 40px;
 			transition: margin-left 0.5s;
@@ -615,21 +609,22 @@
 		}
 
 		#twitter {
-			margin-top: 550px;
+			margin-top: 150px;
 		}
 
 		#facebook {
-			margin-top: 600px;
+			margin-top: 200px;
 		}
 
 		#dribbble {
-			margin-top: 650px;
+			margin-top: 250px;
 		}
 
 		#googleplus {
-			margin-top: 700px;
-			background-color: #DB4437; 
+			margin-top: 300px;
 		}
+
+
 
 		.leftmedia {
 			float: left;
@@ -638,7 +633,7 @@
 		.rightmedia {
 			float: right;
 			text-align: center;
-			background-color: white;		
+			background-color: white;
 			border-radius: 50%;
 			height: 25px;
 			line-height: 25px;
@@ -648,4 +643,22 @@
 
 		.fa {
 			color: black;
+		}
+
+		.btnSocialNetwork {
+			width: 300px;
+			height: 50px;
+			margin-top: 10px;
+			margin-left: -230px;
+			border-radius: 50px;
+			transition: width 1s;
+			-webkit-transition: width 1s;
+		}
+
+		.btnSocialNetwork:hover {
+			width: 400px;
+			height: 50px;
+			margin-top: 10px;
+			margin-left: -230px;
+			border-radius: 50px;
 		}
