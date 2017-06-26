@@ -232,6 +232,23 @@ background-color: #2BAF2B;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		CONTACT
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#contact {
+	margin-bottom: 50px;
+}
+
+#name, #firstname, #email, #subject, #message {
+	border-radius: 1px;
+}
+
+.alert  {
+	margin-top: 3px;
+	display: none;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		FOOTER
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
