@@ -53,6 +53,17 @@ $(document).ready(function() {
      $("#logo-footer").rotate(angle);
    },50);
 
+   $(".verifEmpty").focusout(function() {
+     if ( $("#name").val() == "" ) {
+       $(this).css("background-color", "#FFDDDD");
+       $("#alert-name").show();
+     }
+     if ( $("#name").val() !== "") {
+       $(this).css("background-color", "#FFFFFF");
+       $("#alert-name").hide();
+     }
+
+   })
 
 
 

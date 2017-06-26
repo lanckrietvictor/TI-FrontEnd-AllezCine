@@ -462,9 +462,9 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
           <img src="images/shop/peluche.png" />
           <br />
           <p>
-            Quantité : <input type="text" value="0" class="input-quantity"/>
-            <button type="button">+</button>
-            <button type="button">-</button>
+            Quantité : <input type="text" value="0" class="input-quantity" id="input-peluche"/>
+            <button type="button" class="btn-more-shop" onclick="addToPanierPeluche()">+</button>
+            <button type="button" class="btn-more-shop" onclick="TakeOffToPanierPeluche()">-</button>
           </p>
           <p>
             Prix : <span class="priceCost">20</span>€
@@ -490,6 +490,68 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
         <div class="thumbnail goodies-box">
           <h4>Blu-Ray</h4>
           <img src="images/shop/bluray.jpg" />
+          <br />
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity"/>
+            <button type="button">+</button>
+            <button type="button">-</button>
+          </p>
+          <p>
+            Prix : 25€
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Statuette Donatello</h4>
+          <img src="images/shop/statuette-donatello.png" />
+          <br />
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity" id="input-keychain"/>
+            <button type="button" class="btn-more-shop" onclick="addToPanier()">+</button>
+            <button type="button" class="btn-less-shop" onclick="TakeOffToPanier()">-</button>
+          </p>
+          <p>
+            Prix : <span id="priceCost">80</span>€
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Set de lit</h4>
+          <img src="images/shop/bed-tmnt.jpeg" />
+          <br />
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity"/>
+            <button type="button">+</button>
+            <button type="button">-</button>
+          </p>
+          <p>
+            Prix : <span class="priceCost">30</span>€
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Lego Tortue Ninja</h4>
+          <img src="images/shop/lego-tmnt.jpg" />
+          <br />
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity"/>
+            <button type="button">+</button>
+            <button type="button">-</button>
+          </p>
+          <p>
+            Prix : 35€
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Jeu 3DS - Tortue Ninja</h4>
+          <img src="images/shop/3DS-tmnt.jpg" />
           <br />
           <p>
             Quantité : <input type="text" value="0" class="input-quantity"/>
@@ -532,34 +594,34 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
     <div class="col-md-6">
       <form id="contact-form">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Votre Nom" id="name" />
+          <input type="text" class="form-control verifEmpty" placeholder="Votre Nom" id="name"/>
           <div class="alert alert-danger" role="alert" id="alert-name">
-            Ce champs doit être renseigné
+            Ce champ doit être renseigné
           </div>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Votre Prénom" id="firstname" />
+          <input type="text" class="form-control verifEmpty" placeholder="Votre Prénom" id="firstname" />
           <div class="alert alert-danger" role="alert" id="alert-firstname">
-            Ce champs doit être renseigné
+            Ce champ doit être renseigné
           </div>
         </div>
         <div class="form-group">
-          <input type="email" class="form-control" placeholder="Votre Email" id="email"/>
+          <input type="email" class="form-control verifEmpty" placeholder="Votre Email" id="email"/>
           <div class="alert alert-danger" role="alert" id="alert-email">
-            Ce champs doit être renseigné
+            Ce champ doit être renseigné
           </div>
         </div>
         <div class="form-group">
-          <select class="form-control" id="subject">
+          <select class="form-control verifEmpty" id="subject">
             <option>Une suggestion ?</option>
             <option>Une envie de rejoindre l'équipe ?</option>
             <option>Autre ?</option>
           </select>
         </div>
         <div class="form-group">
-          <textarea class="form-control" rows="5" placeholder="Votre message" id="message"></textarea>
+          <textarea class="form-control verifEmpty" rows="5" placeholder="Votre message" id="message"></textarea>
           <div class="alert alert-danger" role="alert" id="alert-message">
-            Ce champs doit être renseigné
+            Ce champ  doit être renseigné
           </div>
         </div>
 
@@ -631,53 +693,6 @@ Copyright © Victor L. &amp; Gary L. 2017, tous droits réservés
 
 <script>
 
-function sendContact() {
-  var nameContact = document.getElementById("name").value;
-  var firstnameContact = document.getElementById("firstname").value;
-  var emailContact = document.getElementById("email").value;
-  var subjectContact = document.getElementById("subject").value;
-  var messageContact = document.getElementById("message").value;
-  var condition = true;
-
-  document.getElementById("name-modale").innerHTML =
-    "Bonjour " + firstnameContact +" ! <br /><br /> Voici ce qui va nous être envoyé. Si tout est correct, veuillez confirmer en cliquant sur le bouton d'envoi.<br /> "
-    + "<br />Nom : " + nameContact + "<br />Prénom : " + firstnameContact + "<br />Adresse email : " + emailContact + "<br />Sujet : " + subjectContact + "<br />Message : " + messageContact;
-
-  while(condition) {
-
-  if (nameContact === "") {
-    document.getElementById("name").style.backgroundColor = "#e74c3c ";
-    document.getElementById("alert-name").style.display = "block";
-    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
-    condition = true;
-  }
-  if (firstnameContact === "") {
-    document.getElementById("firstname").style.backgroundColor = "#e74c3c ";
-    document.getElementById("alert-firstname").style.display = "block";
-    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
-    condition = true;
-  }
-  if (emailContact === "") {
-    document.getElementById("email").style.backgroundColor = "#e74c3c ";
-    document.getElementById("alert-email").style.display = "block";
-    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
-    condition = true;
-  }
-  if (messageContact === "") {
-    document.getElementById("message").style.backgroundColor = "#e74c3c ";
-    document.getElementById("alert-message").style.display = "block";
-    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
-    condition = true;
-  }
-  condition = false;
-  }
-
-}
-
-function submitGood() {
-  alert("Le message a bien été envoyé !");
-}
-
 
 
 function addToPanier() {
@@ -699,6 +714,28 @@ function TakeOffToPanier() {
   totalKeychain;
   document.getElementById("panier").style.display = "block";
   document.getElementById("montant-panier").innerHTML = totalKeychain * price + "€";
+
+}
+
+function addToPanierPeluche() {
+  var a = parseInt(document.getElementById("input-peluche").value);
+  var price = 20;
+  var totalPeluche = document.getElementById("input-peluche").value = a + 1;
+
+  totalPeluche;
+  document.getElementById("panier").style.display = "block";
+  document.getElementById("montant-panier").innerHTML = totalPeluche * price + "€";
+
+}
+
+function TakeOffToPanierPeluche() {
+  var a = parseInt(document.getElementById("input-peluche").value);
+  var price = 20;
+  var totalPeluche = document.getElementById("input-peluche").value = a - 1;
+
+  totalPeluche;
+  document.getElementById("panier").style.display = "block";
+  document.getElementById("montant-panier").innerHTML = totalPeluche * price + "€";
 
 }
 
