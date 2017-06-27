@@ -5,6 +5,7 @@ Le travail a été séparé en deux dès le départ.
 Bref résumé en attendant la version finale.
 
 Victor s'est occupé :
+
 ## Site 1
 
 - Du header, footer ( le squelette du html )
@@ -21,10 +22,12 @@ Victor s'est occupé :
 
 - Tous
 
-## Difficultés
+## Difficultés rencontrées par Victor :
 
 - Le classe active ne change pas chez le premier carousel. C'est une function native de bootstrap, mais il faut que j'ai fait une override des sortes. Pas trouvé la solution.
 - Quelques problèmes avec le JS/jQuery. Pas déjà assez comfortable avec ces langages, mais j'ai pu résoudre le plupart des problèmes
+
+-------------------------------------------------------
 
 Gary s'est occupé : 
 ## Site 1
@@ -40,6 +43,3 @@ Gary s'est occupé :
 ### Difficultés rencontrées par Gary :
 
 - Le javascript au niveau du formulaire ( je ne comprends toujours pas pourquoi il ne vérifie pas tous les champs en même temps lors du clic sur le bouton. Celui-ci m'indique pour le mail et pour le message que ceux-ci ne sont pas présent uniquement si les champs Nom et Prénom sont remplis.
-
-
-A suivre...
