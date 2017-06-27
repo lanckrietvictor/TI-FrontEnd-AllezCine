@@ -334,94 +334,94 @@
 			display: inline-block;
 		}
 
-.movie-series-box {
-	width: 190px;
-	text-align: center;
+		.movie-series-box {
+			width: 190px;
+			text-align: center;
 
-}
+		}
 
-.movie-series-affiche {
-	width: 170px;
-	height: 250px;
-}
+		.movie-series-affiche {
+			width: 170px;
+			height: 250px;
+		}
 
-.movie-series-title {
-	font-weight: bold;
-}
+		.movie-series-title {
+			font-weight: bold;
+		}
 
-.movie-series-categorie {
-	float: left;
-	font-weight: bold;
-}
+		.movie-series-categorie {
+			float: left;
+			font-weight: bold;
+		}
 
-.movie-series-years {
-	float:right;
-}
+		.movie-series-years {
+			float:right;
+		}
 
-.btnsMoreLess {
-	width: 130px;
-	margin-left: auto;
-	margin-right: auto;
-}
+		.btnsMoreLess {
+			width: 130px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
-.moreMoviesBtn {
-	background-color: #FF8D1B;
-	width: 130px;
-	height: 35px;
-	text-align: center;
-	font-weight: bold;
-	color: #FFF;
-	margin-bottom: 20px;
-	border-radius: 0;
-}
+		.moreMoviesBtn {
+			background-color: #FF8D1B;
+			width: 130px;
+			height: 35px;
+			text-align: center;
+			font-weight: bold;
+			color: #FFF;
+			margin-bottom: 20px;
+			border-radius: 0;
+		}
 
-.lessMoviesBtn {
-	background-color: #FF8D1B;
-	width: 130px;
-	height: 35px;
-	text-align: center;
-	font-weight: bold;
-	color: #FFF;
-	margin-bottom: 20px;
-	border-radius: 0;
-}
+		.lessMoviesBtn {
+			background-color: #FF8D1B;
+			width: 130px;
+			height: 35px;
+			text-align: center;
+			font-weight: bold;
+			color: #FFF;
+			margin-bottom: 20px;
+			border-radius: 0;
+		}
 
-.moreMoviesBox {
-	display: none;
-	margin-top: 20px;
-}
+		.moreMoviesBox {
+			display: none;
+			margin-top: 20px;
+		}
 
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		FEATURED SERIES
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.moreSeriesBtn {
-	background-color: #FF8D1B;
-	width: 130px;
-	height: 35px;
-	text-align: center;
-	font-weight: bold;
-	color: #FFF;
-	margin-bottom: 20px;
-	border-radius: 0;
-}
+		.moreSeriesBtn {
+			background-color: #FF8D1B;
+			width: 130px;
+			height: 35px;
+			text-align: center;
+			font-weight: bold;
+			color: #FFF;
+			margin-bottom: 20px;
+			border-radius: 0;
+		}
 
-.moreSeriesBox {
-	display: none;
-	margin-top: 20px;
-}
+		.moreSeriesBox {
+			display: none;
+			margin-top: 20px;
+		}
 
-.lessSeriesBtn {
-	background-color: #FF8D1B;
-	width: 130px;
-	height: 35px;
-	text-align: center;
-	font-weight: bold;
-	color: #FFF;
-	margin-bottom: 20px;
-	border-radius: 0;
-}
+		.lessSeriesBtn {
+			background-color: #FF8D1B;
+			width: 130px;
+			height: 35px;
+			text-align: center;
+			font-weight: bold;
+			color: #FFF;
+			margin-bottom: 20px;
+			border-radius: 0;
+		}
 
 		.twitter-contactBox {
 			background-color: #33CCFF;
@@ -451,13 +451,6 @@
 			list-style: none;
 		}
 
-		#trailerBox {
-
-		}
-
-		#shopID {
-		}
-
 		#test {																																				/* TEST HERE */
 			margin-left: -31px;
 		}
@@ -465,12 +458,21 @@
 		#shopControllers {
 			position: relative;
 			width: 50px;
-			left: 90%;
-			bottom: 20px;
+			left: 93.5%;
+			bottom: 330px;
+		}
+
+		.shop-right-icon, .shop-left-icon {
+			color: white;
+			background-color: black;
 		}
 
 		.shopControl {
 			background-color: black;
+		}
+
+		.movie-series-affiche {
+			cursor: pointer;
 		}
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -625,7 +627,6 @@
 		}
 
 
-
 		.leftmedia {
 			float: left;
 		}
@@ -661,4 +662,10 @@
 			margin-top: 10px;
 			margin-left: -230px;
 			border-radius: 50px;
+		}
+
+		@media only screen and (max-width: 768px) {
+			.position {
+				visibility: hidden;
+			}
 		}
