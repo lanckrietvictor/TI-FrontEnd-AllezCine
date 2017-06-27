@@ -33,14 +33,20 @@ background-color: #2BAF2B;
 		PRESENTATION
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+#presentation {
+	background-color: rgba(3, 124, 0, 0.2);
+	margin-bottom: 100px;
+}
+
 #presentationIndicators {
-    background-color: black;
+    background-color: rgba(3, 124, 0, 1);
     bottom: 450px;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     margin-left: 0;
+    border-radius: 5px;
 }
 
 #presentationCarousel {
@@ -53,7 +59,7 @@ background-color: #2BAF2B;
 
 .tmntPicPresentation {
 	max-width: 100%;
-	height: auto;
+	max-height: 100%;
 }
 
 #presentationSlides {
@@ -61,14 +67,23 @@ background-color: #2BAF2B;
 }
 
 #presentationIndicators li {
-	border-radius: 0;
 	width: 20%;
-	height: 95%;
-	text-indent: 0;
+	height: auto;
+	color: white;
 }
 
 .active {
 	margin: 1px !important;
+	color: #037C00 !important;
+	font-weight: bold;
+}
+
+#textInsideIndicator {
+	border-radius: 5px;
+	text-indent: 0;
+	line-height: 35px;
+	font-weight: bold;
+	/*color: white;*/
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
