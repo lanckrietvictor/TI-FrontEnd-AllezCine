@@ -43,3 +43,8 @@ Gary s'est occupé :
 ### Difficultés rencontrées par Gary :
 
 - Le javascript au niveau du formulaire ( je ne comprends toujours pas pourquoi il ne vérifie pas tous les champs en même temps lors du clic sur le bouton. Celui-ci m'indique pour le mail et pour le message que ceux-ci ne sont pas présent uniquement si les champs Nom et Prénom sont remplis.
+
+
+## ! Remarques
+
+- Le fichier finale de première site, c'est le fichier **"test.html"**
