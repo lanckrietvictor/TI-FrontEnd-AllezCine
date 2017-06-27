@@ -53,18 +53,26 @@ $(document).ready(function() {
      $("#logo-footer").rotate(angle);
    },50);
 
+   $("#newsletter-btn").mouseenter(function() {
+     $("#newsletter-btn").css("box-shadow", "none");
+   });
+   $("#newsletter-btn").mouseleave(function() {
+     $("#newsletter-btn").css("box-shadow", " 0px 3px 0px #000");
+   });
+
+/*
    $(".verifEmpty").focusout(function() {
-     if ( $("#name").val() == "" ) {
+     if ( $(this).val() == "" ) {
        $(this).css("background-color", "#FFDDDD");
-       $("#alert-name").show();
+       $("#alert-message").show();
      }
-     if ( $("#name").val() !== "") {
+     if ( $(this).val() !== "") {
        $(this).css("background-color", "#FFFFFF");
-       $("#alert-name").hide();
+       $("#alert-message").hide();
      }
 
    })
 
-
+*/
 
 });
