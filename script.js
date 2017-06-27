@@ -16,9 +16,6 @@ function verifAge() {
   }
   else {
     alert("Welcome");
-  //  modalAge.style.display = "none";
-    modalAge.setAttribute("data-backdrop", "false");
-  //  window.location.assign("enter.html");
   }
 
 

@@ -12,7 +12,7 @@
   <link href="css/csshake.min.css" rel="stylesheet" type="text/css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" type="text/css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
 
         <a class="navbar-brand" href="#">
 
-          <img alt="logo" src="images/header-logo.png" height="30px">
+          <img alt="logo" src="images/logo.png" id="logo-header">
 
         </a>
 
@@ -84,6 +84,7 @@
 <!-- First Section -->
 
 
+
 <section id="presentation">
     <div class="container presentation">
      <div id="presentationCarousel" class="carousel slide" data-ride="carousel">
@@ -91,16 +92,16 @@
       <!--Indicators-->
       <ol class="carousel-indicators" id="presentationIndicators">
        <li class="indicatorStyle active" data-target="#presentationCarousel" data-slide-to="0">
-        <div id="textInsideIndicator">Leonardo</div>
+        <div class="textInsideIndicator">Leonardo</div>
       </li>
       <li class="indicatorStyle" data-target="#presentationCarousel" data-slide-to="1">
-        <div id="textInsideIndicator">Donatello</div>
+        <div class="textInsideIndicator">Donatello</div>
       </li>
       <li class="indicatorStyle" data-target="#presentationCarousel" data-slide-to="2">
-        <div id="textInsideIndicator">Michelangelo</div>
+        <div class="textInsideIndicator">Michelangelo</div>
       </li>
       <li class="indicatorStyle" data-target="#presentationCarousel" data-slide-to="3">
-        <div id="textInsideIndicator">Raphael</div>
+        <div class="textInsideIndicator">Raphael</div>
       </li>
     </ol>
 
@@ -108,11 +109,11 @@
     <div class="carousel-inner" id="presentationSlides">
      <!--Slide 1: Leonardo-->
      <div class="item active">
-      <div class="row ">
+      <div class="row  presentation-perso">
        <div class="col-md-4 col-sm-4 col-xs-4">
-        <img class="img-fluid tmntPicPresentation" src="Photos/Presentation/Leonardo.png" alt="Leonardo">
+        <img class="img-fluid tmntPicPresentation" src="images/presentation/leonardo.png" alt="Leonardo">
       </div>
-      <div class="col-md-8 col-sm-8 col-xs-8">
+      <div class="col-md-8 col-sm-8 col-xs-8 description-perso">
         <h1>Leonardo</h1>
         <h2>Skills</h2>
         <p>blabla</p>
@@ -127,11 +128,11 @@
 
   <!--Slide 2: Donatello-->
   <div class="item">
-    <div class="row">
+    <div class="row presentation-perso">
      <div class="col-md-4 col-sm-4 col-xs-4">
-      <img class="tmntPicPresentation img-fluid" src="Photos/Presentation/Donatello.png" alt="Donatello">
+      <img class="tmntPicPresentation img-fluid" src="images/presentation/donatello.gif" alt="Donatello">
     </div>
-    <div class="col-md-8 col-sm-8 col-xs-8">
+    <div class="col-md-8 col-sm-8 col-xs-8 description-perso">
       <h1>Donatello</h1>
       <h2>Skills</h2>
       <p>blabla</p>
@@ -145,11 +146,11 @@
 
 <!--Slide 3: Michelangelo-->
 <div class="item">
-  <div class="row">
+  <div class="row presentation-perso">
    <div class="col-md-4 col-sm-4 col-xs-4">
-    <img class="tmntPicPresentation img-fluid" src="Photos/Presentation/Michelangelo.png" alt="Michelangelo">
+    <img class="tmntPicPresentation img-fluid" src="images/presentation/michelangelo.png" alt="Michelangelo">
   </div>
-  <div class="col-md-8 col-sm-8 col-xs-8">
+  <div class="col-md-8 col-sm-8 col-xs-8 description-perso">
     <h1>Michelangelo</h1>
     <h2>Skills</h2>
     <p>blabla</p>
@@ -163,11 +164,11 @@
 
 <!--Slide 4: Raphael-->
 <div class="item">
-  <div class="row">
+  <div class="row presentation-perso">
    <div class="col-md-4 col-sm-4 col-xs-4">
-    <img class="tmntPicPresentation img-fluid" src="Photos/Presentation/Raphael.png" alt="Raphael">
+    <img class="tmntPicPresentation img-fluid" src="images/presentation/raphael.png" alt="Raphael">
   </div>
-  <div class="col-md-8 col-sm-8 col-xs-8">
+  <div class="col-md-8 col-sm-8 col-xs-8 description-perso">
     <h1>Raphael</h1>
     <h2>Skills</h2>
     <p>blabla</p>
@@ -198,7 +199,7 @@
       <div class="col-md-3">
         <div class="turtle-flat">
           <div class="bandeau" id="bandeau-blue">
-          <img src="img/story/eyes-blue.png" class="bandeau-img" />
+          <img src="images/story/eyes-blue.png" class="bandeau-img" />
           </div>
         </div>
         <div id="story">
@@ -216,7 +217,7 @@
       <div class="col-md-3">
         <div class="turtle-flat">
           <div class="bandeau" id="bandeau-orange">
-          <img src="img/story/eyes-orange.png" class="bandeau-img" />
+          <img src="images/story/eyes-orange.png" class="bandeau-img" />
           </div>
         </div>
         <div id="series">
@@ -225,8 +226,9 @@
         </div>
         <div id="series-panel" class="style-panel">
           <p>
-            Quand la petite entreprise californienne de Playmates Toys s’est penchée sur la production des jouets Tortues Ninja, ils étaient conscients du risque, et préférèrent que la série se fasse connaître, avant de lancer la gamme en magasins11,12. Le 28 décembre 1987, la série commence à l’écran, avec cinq épisodes. Treize autres suivent, avec la saison deux débutant le 1er octobre 1988.
-            La série a été produite par la Murakami-Wolf-Swenson Film Productions Inc (qui devint plus tard la Fred Wolf Films).
+            Quand la petite entreprise californienne de Playmates Toys s’est penchée sur la production des jouets Tortues Ninja, ils étaient conscients du risque, et préférèrent que la série se fasse connaître, avant de lancer la gamme en magasins. Le 28 décembre 1987, la série commence à l’écran, avec cinq épisodes. Treize autres suivent, avec la saison deux débutant le 1er octobre 1988.
+            <br />
+            <br />
           </p>
           <button class="btn btn-link" data-toggle="modal" data-target="#modal-series">Lire plus...</button>
         </div>
@@ -235,7 +237,7 @@
       <div class="col-md-3">
         <div class="turtle-flat">
           <div class="bandeau" id="bandeau-purple">
-          <img src="img/story/eyes-purple.png" class="bandeau-img" />
+          <img src="images/story/eyes-purple.png" class="bandeau-img" />
           </div>
         </div>
         <div id="series-next">
@@ -244,7 +246,11 @@
         </div>
         <div id="series-next-panel" class="style-panel">
           <p>
-            En 2003 une nouvelle série produite par 4Kids Entertainment. Cette fois, Mirage Studio prit des mesures et s'assura une partie plus importante des droits sur la série. Cela conduisit à un dessin animé plus proche du comic book, donc plus sérieux, sombre et légèrement plus violent, mais toujours assez détendu pour être visible des enfants. La première partie de la série est presque complètement basée sur les comic book et les personnages sont plus élaborés que dans la première série.
+            En 2003 une nouvelle série produite par 4Kids Entertainment. Cette fois, Mirage Studio prit des mesures et s'assura une partie plus importante des droits sur la série. Cela conduisit à un dessin animé plus proche du comic book, donc plus sérieux, sombre et légèrement plus violent, mais toujours assez détendu pour être visible des enfants.
+            <br />
+            <br />
+            <br />
+            <br />
           </p>
           <button class="btn btn-link" data-toggle="modal" data-target="#modal-series-next">Lire plus...</button>
         </div>
@@ -253,7 +259,7 @@
       <div class="col-md-3">
         <div class="turtle-flat">
           <div class="bandeau" id="bandeau-red">
-          <img src="img/story/eyes-red.png" class="bandeau-img" />
+          <img src="images/story/eyes-red.png" class="bandeau-img" />
           </div>
         </div>
         <div id="movies">
@@ -387,9 +393,9 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
 
 <section id="photographies">
 
-<div class="container" id="gallery">
+<div class="container">
   <h3 class="section-title">Galerie </h3>
-  <div class="row">
+  <div class="row" id="gallery">
     <div class="col-md-12">
 
         <a href="images/gallery/1-1.jpg" data-lightbox="image-01" data-title="Jeux-Vidéos">
@@ -431,6 +437,27 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
 
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-12">
+
+      <a href="images/gallery/9-9.jpg" data-lightbox="image-01" data-title="Collection">
+      <img src="images/gallery/9.jpg" class="thumbnail img-responsive img-gallery" />
+      </a>
+
+      <a href="images/gallery/10-10.jpg" data-lightbox="image-01" data-title="Comics">
+      <img src="images/gallery/10.jpg" class="thumbnail img-responsive img-gallery" />
+      </a>
+
+      <a href="images/gallery/11-11.jpg" data-lightbox="image-01" data-title="Cosplays">
+      <img src="images/gallery/11.jpg" class="thumbnail img-responsive img-gallery" />
+      </a>
+
+      <a href="images/gallery/12-12.jpg" data-lightbox="image-01" data-title="Wallpaper">
+      <img src="images/gallery/12.jpg" class="thumbnail img-responsive img-gallery" />
+      </a>
+
+    </div>
+  </div>
 </div>
 
 </section>
@@ -450,27 +477,25 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
           <img src="images/shop/keychain.png" />
           <br />
           <p>
-            Quantité : <input type="text" value="0" class="input-quantity" id="input-keychain"/>
-            <button type="button" class="btn-more-shop" onclick="addToPanier()">+</button>
-            <button type="button" class="btn-less-shop" onclick="TakeOffToPanier()">-</button>
+            Prix : <span id="priceCost">10</span>€
           </p>
           <p>
-            Prix : <span id="priceCost">10</span>€
+            Quantité : <input type="text" value="0" class="input-quantity" id="input-keychain"/><br />
+            <button type="button" class="btn btn-default btn-add-panier" onclick="addToPanier(tabProduct[0])"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Ajouter au panier</button>
           </p>
         </div>
       </div>
       <div class="col-md-3">
         <div class="thumbnail goodies-box">
-          <h4>Peluche</h4>
+          <h4>Peluche Leonardo</h4>
           <img src="images/shop/peluche.png" />
           <br />
           <p>
-            Quantité : <input type="text" value="0" class="input-quantity"/>
-            <button type="button">+</button>
-            <button type="button">-</button>
+            Prix : <span class="priceCost">20</span>€
           </p>
           <p>
-            Prix : <span class="priceCost">20</span>€
+            Quantité : <input type="text" value="0" class="input-quantity" id="input-peluche"/><br />
+            <button type="button" class="btn btn-default btn-add-panier" onclick="addToPanier(tabProduct[1])"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Ajouter au panier</button>
           </p>
         </div>
       </div>
@@ -480,27 +505,83 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
           <img src="images/shop/shirt-01.png" />
           <br />
           <p>
-            Quantité : <input type="text" value="0" class="input-quantity"/>
-            <button type="button">+</button>
-            <button type="button">-</button>
+            Prix : 15€
           </p>
           <p>
-            Prix : 15€
+            Quantité : <input type="text" value="0" class="input-quantity" id="input-tshirt"/><br />
+            <button type="button" class="btn btn-default btn-add-panier" onclick="addToPanier(tabProduct[2])"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Ajouter au panier</button>
           </p>
         </div>
       </div>
       <div class="col-md-3">
         <div class="thumbnail goodies-box">
-          <h4>Blu-Ray</h4>
+          <h4>Blu-Ray du film 2016</h4>
           <img src="images/shop/bluray.jpg" />
           <br />
           <p>
-            Quantité : <input type="text" value="0" class="input-quantity"/>
-            <button type="button">+</button>
-            <button type="button">-</button>
+            Prix : 25€
           </p>
           <p>
+            Quantité : <input type="text" value="0" class="input-quantity" id="input-bluray"/><br />
+            <button type="button" class="btn btn-default btn-add-panier" onclick="addToPanier(tabProduct[3])"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Ajouter au panier</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Statuette Donatello</h4>
+          <img src="images/shop/statuette-donatello.png" />
+          <br />
+          <p>
+            Prix : <span id="priceCost">80</span>€
+          </p>
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity" id="input-statuette"/><br />
+            <button type="button" class="btn btn-default btn-add-panier" onclick="addToPanier(tabProduct[4])"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Ajouter au panier</button>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Set de lit</h4>
+          <img src="images/shop/bed-tmnt.jpeg" />
+          <br />
+          <p>
+            Prix : <span class="priceCost">30</span>€
+          </p>
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity" id="input-bed"/><br />
+            <button type="button" class="btn btn-default btn-add-panier" onclick="addToPanier(tabProduct[5])"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Ajouter au panier</button>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Lego Tortue Ninja</h4>
+          <img src="images/shop/lego-tmnt.jpg" />
+          <br />
+          <p>
+            Prix : 45€
+          </p>
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity" id="input-lego"/><br />
+            <button type="button" class="btn btn-default btn-add-panier" onclick="addToPanier(tabProduct[6])"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Ajouter au panier</button>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail goodies-box">
+          <h4>Jeu 3DS - Tortue Ninja</h4>
+          <img src="images/shop/3DS-tmnt.jpg" />
+          <br />
+          <p>
             Prix : 25€
+          </p>
+          <p>
+            Quantité : <input type="text" value="0" class="input-quantity" id="input-videogames"/><br />
+            <button type="button" class="btn btn-default btn-add-panier" onclick="addToPanier(tabProduct[7])"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Ajouter au panier</button>
           </p>
         </div>
       </div>
@@ -511,9 +592,11 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
 <!-- Panier -->
 
 <div class="container" id="panier">
-  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="font-size:24px;"></span>
-  <p>Montant du panier :</p>
-  <p id="montant-panier"></p>
+  <span class="glyphicon glyphicon-remove" aria-hidden="true" id="remove-panier" onclick="exitPanier()"></span>
+  <h4>Montant du panier</h4>
+  <p id="montant-panier">Vide</p>
+  <button type="button" class="btn btn-default" id="reset-panier" onclick="viderPanier()">Vider le panier
+  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
 </div>
 
 </section>
@@ -524,9 +607,9 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
 
 <div class="container">
   <h3 class="section-title">Contactez-nous</h3>
-  <div class="row">
+  <div class="row" id="form-box">
     <div class="col-md-6" style="text-align:center;">
-      <h4>Contactez-nous</h4>
+      <h4>Laissez-nous votre avis</h4>
       <p>
         Une envie de nous contacter ? Une suggestion à nous faire ? N'hésitez pas à nous contacter en remplissant le formulaire.
       </p>
@@ -535,38 +618,38 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
     <div class="col-md-6">
       <form id="contact-form">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Votre Nom" id="name" />
+          <input type="text" class="form-control verifEmpty" placeholder="Votre Nom" id="name"/>
           <div class="alert alert-danger" role="alert" id="alert-name">
-            Ce champs doit être renseigné
+            Ce champ doit être renseigné
           </div>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Votre Prénom" id="firstname" />
+          <input type="text" class="form-control verifEmpty" placeholder="Votre Prénom" id="firstname" />
           <div class="alert alert-danger" role="alert" id="alert-firstname">
-            Ce champs doit être renseigné
+            Ce champ doit être renseigné
           </div>
         </div>
         <div class="form-group">
-          <input type="email" class="form-control" placeholder="Votre Email" id="email"/>
+          <input type="text" class="form-control verifEmpty" placeholder="Votre Email" id="email"/>
           <div class="alert alert-danger" role="alert" id="alert-email">
-            Ce champs doit être renseigné
+            Ce champ doit être renseigné
           </div>
         </div>
         <div class="form-group">
-          <select class="form-control" id="subject">
+          <select class="form-control verifEmpty" id="subject">
             <option>Une suggestion ?</option>
             <option>Une envie de rejoindre l'équipe ?</option>
             <option>Autre ?</option>
           </select>
         </div>
         <div class="form-group">
-          <textarea class="form-control" rows="5" placeholder="Votre message" id="message"></textarea>
+          <textarea class="form-control verifEmpty" rows="5" placeholder="Votre message" id="message"></textarea>
           <div class="alert alert-danger" role="alert" id="alert-message">
-            Ce champs doit être renseigné
+            Ce champ  doit être renseigné
           </div>
         </div>
 
-        <button type="button" class="btn btn-success" id="submitBtn" onclick="sendContact()" data-target="#modal-contact" data-toggle="modal">Envoyer&nbsp;<span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-primary" id="submitBtn" onclick="sendContact()" data-target="#modal-contact" data-toggle="modal">Envoyer&nbsp;<span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
         </div>
       </form>
     </div>
@@ -585,7 +668,7 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
           <p id="name-modale">
 
           </p>
-          <button type="button" class="btn btn-success" onclick="sendToContact()">Confirmer et envoyer <span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+          <button type="button" class="btn btn-success" onclick="submitGood()">Confirmer et envoyer <span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
         </div>
       </div>
     </div>
@@ -598,7 +681,7 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <img src="img/pizza-footer.png" alt="logo-footer" id="logo-footer"/>
+        <img src="images/pizza-footer.png" alt="logo-footer" id="logo-footer"/>
       </div>
       <div class="col-md-4">
         <h3 class="footer-text-special">Abonnez-vous</h3>
@@ -608,17 +691,16 @@ Les tortues de ce dessin animé reviennent en 2009, dans Turtles Forever, un cro
       <div class="col-md-4">
         <h3 class="footer-text-special">Suivez-nous</h3>
         <ul id="footer-socialNetwork">
-          <!--<li class="footer-text-special">Rejoignez-nous!</li>-->
-          <li><img src="img/SocialNetwork/facebook.png" class="logo-socialNetwork" /></li>
-          <li><img src="img/SocialNetwork/twitter.png" class="logo-socialNetwork" /></li>
-          <li><img src="img/SocialNetwork/instagram.png" class="logo-socialNetwork" /></li>
-          <li><img src="img/SocialNetwork/youtube.png" class="logo-socialNetwork" /></li>
+          <li><img src="images/SocialNetwork/facebook.png" class="logo-socialNetwork" /></li>
+          <li><img src="images/SocialNetwork/twitter.png" class="logo-socialNetwork" /></li>
+          <li><img src="images/SocialNetwork/instagram.png" class="logo-socialNetwork" /></li>
+          <li><img src="images/SocialNetwork/youtube.png" class="logo-socialNetwork" /></li>
         </ul>
 
       </div>
     </div>
   </div>
-
+<br />
 Copyright © Victor L. &amp; Gary L. 2017, tous droits réservés
 
 </footer>
@@ -632,81 +714,6 @@ Copyright © Victor L. &amp; Gary L. 2017, tous droits réservés
   <script src="js/jQuery.js"></script>
   <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
 
-<script>
-
-function sendContact() {
-  var nameContact = document.getElementById("name").value;
-  var firstnameContact = document.getElementById("firstname").value;
-  var emailContact = document.getElementById("email").value;
-  var subjectContact = document.getElementById("subject").value;
-  var messageContact = document.getElementById("message").value;
-  var condition = true;
-
-  document.getElementById("name-modale").innerHTML =
-    "Bonjour " + firstnameContact +" ! <br /><br /> Voici ce qui va nous être envoyé. Si tout est correct, veuillez confirmer en cliquant sur le bouton d'envoi.<br /> "
-    + "<br />Nom : " + nameContact + "<br />Prénom : " + firstnameContact + "<br />Adresse email : " + emailContact + "<br />Sujet : " + subjectContact + "<br />Message : " + messageContact;
-
-  while(condition) {
-
-  if (nameContact === "") {
-    document.getElementById("name").style.backgroundColor = "#e74c3c ";
-    document.getElementById("alert-name").style.display = "block";
-    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
-    condition = true;
-  }
-  if (firstnameContact === "") {
-    document.getElementById("firstname").style.backgroundColor = "#e74c3c ";
-    document.getElementById("alert-firstname").style.display = "block";
-    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
-    condition = true;
-  }
-  if (emailContact === "") {
-    document.getElementById("email").style.backgroundColor = "#e74c3c ";
-    document.getElementById("alert-email").style.display = "block";
-    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
-    condition = true;
-  }
-  if (messageContact === "") {
-    document.getElementById("message").style.backgroundColor = "#e74c3c ";
-    document.getElementById("alert-message").style.display = "block";
-    document.getElementById("submitBtn").attributes.removeNamedItem("data-target");
-    condition = true;
-  }
-  condition = false;
-  }
-
-}
-
-function submitGood() {
-  alert("Le message a bien été envoyé !");
-}
-
-
-
-function addToPanier() {
-  var a = parseInt(document.getElementById("input-keychain").value);
-  var price = 10;
-  var totalKeychain = document.getElementById("input-keychain").value = a + 1;
-
-  totalKeychain;
-  document.getElementById("panier").style.display = "block";
-  document.getElementById("montant-panier").innerHTML = totalKeychain * price + "€";
-
-}
-
-function TakeOffToPanier() {
-  var a = parseInt(document.getElementById("input-keychain").value);
-  var price = 10;
-  var totalKeychain = document.getElementById("input-keychain").value = a - 1;
-
-  totalKeychain;
-  document.getElementById("panier").style.display = "block";
-  document.getElementById("montant-panier").innerHTML = totalKeychain * price + "€";
-
-}
-
-
-</script>
 
 </body>
 

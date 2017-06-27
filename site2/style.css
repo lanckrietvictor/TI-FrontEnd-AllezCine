@@ -1,17 +1,18 @@
 @@font-face {
-	font-family: Turtles;
-	src=url(font/Turtles.otf);
+	font-family: "Turtles";
+	src=url("font/Turtles.otf");
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .section-title {
 	text-align: center;
 	margin-bottom: 30px;
+	color: #FFF;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -20,13 +21,23 @@ body {
 
 .navbar-default {
 	background-color: #037C00;
+	border-bottom: #2BAF2B;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: #FFF;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 color: #FFF;
-background-color: #2BAF2B;
+background-color: #037C00;
+}
+
+#logo-header {
+	 height: 40px;
+	 margin-top: -10px;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -34,12 +45,12 @@ background-color: #2BAF2B;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 #presentation {
-	background-color: rgba(3, 124, 0, 0.2);
-	margin-bottom: 100px;
+	background-color: #2BAF2B;/*rgba(3, 124, 0, 0.2); #2BAF2B*/
+	height: 800px;
 }
 
 #presentationIndicators {
-    background-color: rgba(3, 124, 0, 1);
+    margin-top: 10px;
     bottom: 450px;
     top: 0;
     left: 0;
@@ -72,18 +83,32 @@ background-color: #2BAF2B;
 	color: white;
 }
 
+.description-perso {
+	color: #212121;
+}
+
 .active {
 	margin: 1px !important;
 	color: #037C00 !important;
 	font-weight: bold;
 }
 
-#textInsideIndicator {
+
+.textInsideIndicator {
 	border-radius: 5px;
 	text-indent: 0;
 	line-height: 35px;
 	font-weight: bold;
 	/*color: white;*/
+	background-color: #212121;
+}
+
+.presentation-perso {
+	margin-top: 100px;
+}
+
+.carousel-indicators li {
+	border: 1px solid #212121;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -91,15 +116,14 @@ background-color: #2BAF2B;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 #biographie {
-	background-color: #2BAF2B;
+	background-color: #212121;
 	padding-top: 30px;
+
 }
 
 .bandeau {
 	height: 60px;
 	width: 250px;
-	/*position: absolute;
-	bottom: 150px;*/
 }
 
 .bandeau-img {
@@ -119,11 +143,11 @@ background-color: #2BAF2B;
 .turtle-title {
 	text-align: center;
 	cursor: pointer;
+	color: #cacfd2  ;
 }
 
 #story-panel, #series-panel, #series-next-panel, #movies-panel {
 	display: none;
-	border: 3px solid #B25C11;
 }
 
 #story-panel {
@@ -143,16 +167,19 @@ background-color: #2BAF2B;
 }
 
 .style-panel {
-	/*background-color: #F0B21F;*/
+	/* background-color: #048B9A; */
+	color: #cacfd2 ;
 	border-radius: 5px;
 	padding: 10px;
 	width: 250px;
-	height: 400px;
+	height: 350px;
 	text-align: center;
+	font-weight: bold;
 }
 
 .btn-link {
 	bottom:0;
+	color: #cacfd2 ;
 }
 
 
@@ -177,12 +204,13 @@ background-color: #2BAF2B;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 #photographies {
-
+	height: 800px;
 	text-align: center;
-	background-color: #212121;
+	background-color: #2BAF2B;
 }
 
 #gallery {
+	margin-top: 100px;
 }
 
 .img-gallery {
@@ -195,7 +223,8 @@ background-color: #2BAF2B;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 #goodies {
-	background-color: #FFF;
+	background-color: #212121;
+	height: 800px;
 }
 
 .goodies-box  {
@@ -210,18 +239,37 @@ background-color: #2BAF2B;
 	width: 40px;
 }
 
+.btn-add-panier {
+	background-color: #F0B21F;
+}
+
 /* !!!!!!!!!!!!! PANIER !!!!!!!!!!!!!!!!!!*/
 
 #panier {
-	width: 120px;
-	height: 120px;
+	width: 160px;
+	height: 180px;
 	background-color: #F0B21F;
 	position: fixed;
 	top: 300px;
 	right: 0px;
-	border-radius: 5px;
+	border-radius: 10px 0 0 10px;
 	z-index: 10;
+	text-align: center;
+	padding-top: 10px;
 	display: none;
+}
+
+#reset-panier {
+	margin-top: 10px;
+}
+
+#remove-panier {
+	margin-left: 120px;
+	cursor: pointer;
+}
+
+#montant-panier {
+	font-size: 16px;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -229,7 +277,12 @@ background-color: #2BAF2B;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 #contact {
-	margin-bottom: 50px;
+	height: 700px;
+	background-color: #2BAF2B;
+}
+
+#form-box {
+	margin-top: 100px;
 }
 
 #name, #firstname, #email, #subject, #message {
@@ -246,22 +299,6 @@ background-color: #2BAF2B;
 	display: none;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		CONTACT
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-#contact {
-	margin-bottom: 50px;
-}
-
-#name, #firstname, #email, #subject, #message {
-	border-radius: 1px;
-}
-
-.alert  {
-	margin-top: 3px;
-	display: none;
-}
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		FOOTER
@@ -270,7 +307,7 @@ background-color: #2BAF2B;
 footer {
 	background-color: #212121;
 	color: #FFF;
-	height: 300px;
+	height: 250px;
 	width: 100%;
 	text-align: center;
 }
@@ -290,7 +327,7 @@ footer {
 
 #logo-footer {
 	width: 130px;
-	margin-top: 80px;
+	margin-top: 50px;
 	float: left;
 }
 
@@ -312,7 +349,9 @@ footer {
 }
 
 #newsletter-btn {
+	margin-top: -29px;
 	background-color: #037C00;
 	border: 1px solid #037C00;
+	border-radius: 0 0 5px 5px;
 	color: #FFF;
 }
