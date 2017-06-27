@@ -27,8 +27,19 @@ Victor s'est occupé :
 - Quelques problèmes avec le JS/jQuery. Pas déjà assez comfortable avec ces langages, mais j'ai pu résoudre le plupart des problèmes
 
 Gary s'est occupé : 
-
+## Site 1
 - Des différentes sections de la page ( les 5 premiers films, la section film, la section série, Shop Movie et Contact US )
 - Des différentes modals ( age, formulaire de connection, cookie )
+
+## Site 2
+- Des sections Biographie, Galerie, Shop, Contact et le Footer.
+- Du Javascript concernant la biographie, la boutique, ainsi que du formulaire de contact
+- Installation du plugin de la lightbox
+
+
+### Difficultés rencontrées par Gary :
+
+- Le javascript au niveau du formulaire ( je ne comprends toujours pas pourquoi il ne vérifie pas tous les champs en même temps lors du clic sur le bouton. Celui-ci m'indique pour le mail et pour le message que ceux-ci ne sont pas présent uniquement si les champs Nom et Prénom sont remplis.
+
 
 A suivre...
