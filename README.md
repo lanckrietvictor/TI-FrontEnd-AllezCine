@@ -48,3 +48,32 @@ Gary s'est occupé :
 ## ! Remarques
 
 - Le fichier finale de première site, c'est le fichier **"test.html"**
+
+
+## Quelques captures d'écran
+
+### Site 1
+
+![header + slider site 1](https://github.com/lanckrietvictor/TI-FrontEnd-AllezCine/blob/Victor/Photos%20readme/Screenshot%20carousel.png)
+
+----
+
+![example of movie display](https://github.com/lanckrietvictor/TI-FrontEnd-AllezCine/blob/Victor/Photos%20readme/Movie%20examples.png)
+
+----
+
+![screenshot footer](https://github.com/lanckrietvictor/TI-FrontEnd-AllezCine/blob/Victor/Photos%20readme/Screenshot%20footer.png)
+
+
+
+### Site 2
+
+![header + slider site 2](https://github.com/lanckrietvictor/TI-FrontEnd-AllezCine/blob/Victor/Photos%20readme/Header%20%2B%20slider%20site2.png)
+
+----
+
+![Biographie](https://github.com/lanckrietvictor/TI-FrontEnd-AllezCine/blob/Victor/Photos%20readme/Biographie.png)
+
+----
+
+![shop + contact form](https://github.com/lanckrietvictor/TI-FrontEnd-AllezCine/blob/Victor/Photos%20readme/Shop%20%2B%20contact%20form.png)
