@@ -30,171 +30,187 @@
         <div class="modal-body">
           <p>Avant de pouvoir continuer à naviguer sur ce site, nous avons besoin d'être sûr
 
-          sûr que vous ayez au minimum 18 ans. Veuillez entrez votre âge dans le champ suivant et de valider celui-ci
-          en cliquant sur le bouton correspondant.</p>
-          <input type="text" placeholder="Entrez votre age ici" id="inputAge"/>
-          <button type="button" class="btn btn-success" onclick="verifAge()" data-dismiss="modal">Vérifier!</button>
-          <button type="button" class="btn btn-danger">Quitter</button>
+            sûr que vous ayez au minimum 18 ans. Veuillez entrez votre âge dans le champ suivant et de valider celui-ci
+            en cliquant sur le bouton correspondant.</p>
+            <input type="text" placeholder="Entrez votre age ici" id="inputAge"/>
+            <button type="button" class="btn btn-success" onclick="verifAge()" data-dismiss="modal">Vérifier!</button>
+            <button type="button" class="btn btn-danger">Quitter</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Social Network -->
+
+      <div class="position">
+        <div class="socialmedia twitter-contactBox" id="twitter">
+          <div class="leftmedia"><p>Twitter</p></div>
+          <div class="rightmedia first"><i class="fa fa-twitter" aria-hidden="true"></i></div>
         </div>
 
-      </div>
-    </div>
+        <div class="socialmedia facebook-contactBox" id="facebook">
+          <div class="leftmedia"><p>Facebook</p></div>
+          <div class="rightmedia second"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+        </div>
 
-    <!-- Social Network -->
+        <div class="socialmedia dribbble-contactBox" id="dribbble">
+          <div class="leftmedia"><p>Dribble</p></div>
+          <div class="rightmedia third"><i class="fa fa-dribbble" aria-hidden="true"></i></div>
+        </div>
 
-    <div class="position">
-      <div class="socialmedia twitter-contactBox" id="twitter">
-        <div class="leftmedia"><p>Twitter</p></div>
-        <div class="rightmedia first"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-      </div>
-
-      <div class="socialmedia facebook-contactBox" id="facebook">
-        <div class="leftmedia"><p>Facebook</p></div>
-        <div class="rightmedia second"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-      </div>
-
-      <div class="socialmedia dribbble-contactBox" id="dribbble">
-        <div class="leftmedia"><p>Dribble</p></div>
-        <div class="rightmedia third"><i class="fa fa-dribbble" aria-hidden="true"></i></div>
+        <div class="socialmedia googlePlus-contactBox" id="googleplus">
+          <div class="leftmedia"><p>Google+</p></div>
+          <div class="rightmedia fourth"><i class="fa fa-google" aria-hidden="true"></i></div>
+        </div>
       </div>
 
-      <div class="socialmedia googlePlus-contactBox" id="googleplus">
-        <div class="leftmedia"><p>Google+</p></div>
-        <div class="rightmedia fourth"><i class="fa fa-google" aria-hidden="true"></i></div>
-      </div>
-    </div>
+      <header>
+        <div class="container">
+          <div class="row" id="header">
 
-    <header>
-      <div class="container">
-        <div class="row" id="header">
-
-          <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2 logo">
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Recherche" id="searchbar">
-              <span class="input-group-btn">
-                <button class="btn" type="button" id="gobutton">Go!</button>
-              </span>
+            <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2 logo">
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-            <p id="telephone">(+000) 123 456 789</p>
-          </div>
-
-          <button type="button" data-toggle="modal" data-target="#modalConnect" id="login">
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-             LOGIN
-           </div>
-         </button>
-
-         <!-- Modal Login-->
-
-         <div class="modal fade" id="modalConnect" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h3 class="modal-title">Section membre</h3>
+            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Recherche" id="searchbar">
+                <span class="input-group-btn">
+                  <button class="btn" type="button" id="gobutton">Go!</button>
+                </span>
               </div>
-              <div class="modal-body">
-                <form class="form-group">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 modalConnect-col">
-                        <h4>Accédez à votre compte</h4>
-                        <input name="text" placeholder="Votre identifiant" class="form-control modal-login-input"/>
-                        <input name="password" placeholder="Mot de passe"  class="form-control modal-login-input"/>
-                        <br /><label class="checkbox-inline">
-                        <input type="checkbox" id="checkStayOnline" value="option1" /> Rester connecté
-                      </label>
-                      <button type="button" class="btn btn-default">Se Connecter</button>
-                      <br /><a href="#">Oublié votre mot de passe ?</a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <h4>Pas encore de compte ?</h4>
-                      <button type="button" class="btn btn-lg btn-info" id="create-modalConnect">Créer un compte</button><br />
-                      <a href="#" id="cancel-modalConnect">Retour au site</a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+              <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+              <p id="telephone">(+000) 123 456 789</p>
+            </div>
+
+            <button type="button" data-toggle="modal" data-target="#modalConnect" id="login">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+               LOGIN
+             </div>
+           </button>
+
+           <!-- Modal Login-->
+
+           <div class="modal fade" id="modalConnect" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="modal-title">Section membre</h3>
+                </div>
+                <div class="modal-body">
+                  <form class="form-group">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 modalConnect-col">
+                          <h4>Accédez à votre compte</h4>
+                          <input name="text" placeholder="Votre identifiant" id="username" class="form-control modal-login-input"/>
+                          <input name="password" placeholder="Mot de passe" id="password" class="form-control modal-login-input"/>
+                          <br /><label class="checkbox-inline">
+                          <input type="checkbox" id="checkStayOnline" value="option1" /> Rester connecté
+                        </label>
+                        <button type="button" onclick="check(); load();" class="btn btn-default">Se Connecter</button>
+                        <div id="cancel"></div>
+                        <div id="succes"></div>
+                        <br /><a href="#">Oublié votre mot de passe ?</a>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <h4>Pas encore de compte ?</h4>
+                        <button type="button" class="btn btn-lg btn-info" id="create-modalConnect">Créer un compte</button><br />
+                        <a href="#" id="cancel-modalConnect">Retour au site</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Fin modal login-->
+
       </div>
-
-      <!-- Fin modal login-->
-
     </div>
-  </div>
-</header>
+  </header>
 
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header dropdown">
-      <ul class="nav nav-pills">
-        <li role="presentation" class="tabs active">
-          <a href="#">Home</a>
-        </li>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header dropdown">
+        <ul class="nav nav-pills">
+          <li role="presentation" class="tabs active">
+            <a href="#">Home</a>
+          </li>
 
-        <li role="presentation" class="tabs">
-          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-            <a href="#">Films</a>
-            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Comedy</a></li>
-          </ul>
-        </li>
+          <li role="presentation" class="tabs">
+            <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              <a href="#">Films</a>
+              <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Comedy</a></li>
+            </ul>
+          </li>
 
-        <li role="presentation" class="tabs">
-          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-            <a href="#">Series</a>
-            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Français</a></li>
-            <li><a href="#">Flamand</a></li>
-            <li><a href="#">Suédoises</a></li>
-          </ul>
-        </li>
+          <li role="presentation" class="tabs">
+            <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              <a href="#">Series</a>
+              <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Français</a></li>
+              <li><a href="#">Flamand</a></li>
+              <li><a href="#">Suédoises</a></li>
+            </ul>
+          </li>
 
-        <li role="presentation" class="tabs">
-          <a href="#"></a>
-        </li>
+          <li role="presentation" class="tabs">
+            <a href="#"></a>
+          </li>
 
-        <li role="presentation" class="tabs">
-          <a href="#"></a>
-        </li>
+          <li role="presentation" class="tabs">
+            <a href="#"></a>
+          </li>
 
-        <li role="presentation" class="tabs">
-          <a href="#"></a>
-        </li>
+          <li role="presentation" class="tabs">
+            <a href="#"></a>
+          </li>
 
-        <li role="presentation" class="tabs">
-          <a href="#"></a>
-        </li>
-      </ul>
+          <li role="presentation" class="tabs">
+            <a href="#"></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="row" id="toowide">
-  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="slider">
-    <div class="jumbotron">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  </nav>
+  <div class="row" id="toowide">
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="slider">
+      <div class="jumbotron">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="Photos/Tarzan.png" alt="Tarzan" style="width:100%; height: 400px;">
-            <div class="carousel-caption">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width:0%">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="Photos/Tarzan.png" alt="Tarzan" style="width:100%; height: 400px;">
+              <div class="carousel-caption">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width:0%">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
+                <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="Photos/Wonderwoman.png" alt="Wonderwoman" style="width:100%; height: 400px;">
+              <div class="carousel-caption">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
                   <span class="sr-only"></span>
                 </div>
               </div>
@@ -204,7 +220,7 @@
           </div>
 
           <div class="item">
-            <img src="Photos/Wonderwoman.png" alt="Wonderwoman" style="width:100%; height: 400px;">
+            <img src="Photos/baywatch.jpg" alt="Baywatch" style="width:100%; height: 400px;">
             <div class="carousel-caption">
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100"
@@ -218,7 +234,7 @@
         </div>
 
         <div class="item">
-          <img src="Photos/baywatch.jpg" alt="Baywatch" style="width:100%; height: 400px;">
+          <img src="Photos/bossbaby.jpg" alt="Bossbaby" style="width:100%; height: 400px;">
           <div class="carousel-caption">
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="100"
@@ -232,7 +248,7 @@
       </div>
 
       <div class="item">
-        <img src="Photos/bossbaby.jpg" alt="Bossbaby" style="width:100%; height: 400px;">
+        <img src="Photos/beautyandthebeast.jpg" alt="Beauty and the Beast" style="width:100%; height: 400px;">
         <div class="carousel-caption">
           <div class="progress">
             <div class="progress-bar" role="progressbar" aria-valuenow="100"
@@ -244,29 +260,15 @@
         <p>LA is always so much fun!</p>
       </div>
     </div>
-
-    <div class="item">
-      <img src="Photos/beautyandthebeast.jpg" alt="Beauty and the Beast" style="width:100%; height: 400px;">
-      <div class="carousel-caption">
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="100"
-          aria-valuemin="0" aria-valuemax="100" style="width:70%">
-          <span class="sr-only"></span>
-        </div>
-      </div>
-      <h3>Los Angeles</h3>
-      <p>LA is always so much fun!</p>
-    </div>
+    <a class="left carousel-control jumbotron-arrow" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left jumbotron-left-icon"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control jumbotron-arrow" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right jumbotron-right-icon"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-  <a class="left carousel-control jumbotron-arrow" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left jumbotron-left-icon"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control jumbotron-arrow" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right jumbotron-right-icon"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 </div>
 
 
@@ -840,7 +842,7 @@
         </div>
         <div class="carousel-inner">
           <div class="item active">
-          <div id="shopID">
+            <div id="shopID">
               <div class="container movie-series-row">
                 <div class="row" id="test">
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 movie-series-box movie">
@@ -890,7 +892,7 @@
             </div>
           </div>
           <div class="item">
-          <div id="shopID">
+            <div id="shopID">
               <div class="container movie-series-row">
                 <div class="row" id="test">
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 movie-series-box movie">
@@ -1113,6 +1115,45 @@
   <script src="script.js"></script>
   <script src="js/jQuery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    function check () {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      var ajax = new XMLHttpRequest();
+      ajax.onreadystatechange = function() {
+        if (ajax.readyState == 4 && ajax.status == 200) {
+          document.getElementById("succes").innerHTML = ajax.responseText;
+          if (ajax.responseText == ("Login was successful, welcome "+username+"!")) {
+            document.getElementById("cancel").innerHTML = "";
+          }
+
+          else if (ajax.responseText == ("Wrong password, try again.")) {
+            document.getElementById("cancel").innerHTML = "";
+          }
+
+          else if (ajax.responseText == ("Username does not exist, try again.")) {
+            document.getElementById("cancel").innerHTML = "";
+          }
+        }
+      };
+      ajax.open("GET", "ajax.php?username="+username+"&password="+password, true);
+      ajax.send();
+
+      document.getElementById("cancel").innerHTML = "<button onclick='cancel()'>Cancel</button>";
+    }
+
+    function load () {
+      document.getElementById("succes").innerHTML = "<img style='height: 100px; width: auto;' src='https://i2.wp.com/media.boingboing.net/wp-content/uploads/2015/10/tumblr_nlohpxGdBi1tlivlxo1_12801.gif?w=970'>" ;
+    }
+
+    function cancel () {
+      window.stop();
+      document.getElementById("cancel").innerHTML = "";
+      document.getElementById("succes").innerHTML = "";
+    }
+
+
+  </script>
 </body>
 
 </html>
